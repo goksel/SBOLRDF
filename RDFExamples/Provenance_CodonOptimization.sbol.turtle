@@ -1,0 +1,54 @@
+@prefix :      <http://testbase.org> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sbol:  <http://sbols.org/v2#> .
+@prefix myapp: <http://myapp.com/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix om:    <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+
+{ myapp:codon_optimization_software
+          a                        prov:Agent ;
+          dcterms:title            "Codon Optimization Software" ;
+          sbol:displayId           "codon_optimization_software" ;
+          sbol:persistentIdentity  myapp:codon_optimization_software .
+  
+  <http://myapp.com/codon_optimization_activity/usage>
+          a                        prov:Usage ;
+          sbol:displayId           "usage" ;
+          sbol:persistentIdentity  <http://myapp.com/codon_optimization_activity/usage> ;
+          prov:entity              myapp:non_codon_optimized ;
+          prov:hadRole             sbol:source .
+  
+  myapp:non_codon_optimized
+          a                        sbol:ComponentDefinition ;
+          dcterms:title            "Non Codon optimised CDS" ;
+          sbol:displayId           "non_codon_optimized" ;
+          sbol:persistentIdentity  myapp:non_codon_optimized ;
+          sbol:role                <http://identifiers.org/so/SO:0000316> ;
+          sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> .
+  
+  <http://myapp.com/codon_optimization_activity/association>
+          a                        prov:Association ;
+          sbol:displayId           "association" ;
+          sbol:persistentIdentity  <http://myapp.com/codon_optimization_activity/association> ;
+          prov:agent               myapp:codon_optimization_software ;
+          prov:hadRole             myapp:codonoptimiser .
+  
+  myapp:codon_optimized
+          a                        sbol:ComponentDefinition ;
+          dcterms:title            "Codon optimised CDS" ;
+          sbol:displayId           "codon_optimized" ;
+          sbol:persistentIdentity  myapp:codon_optimized ;
+          sbol:role                <http://identifiers.org/so/SO:0000316> ;
+          sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> ;
+          prov:wasDerivedFrom      myapp:non_codon_optimized ;
+          prov:wasGeneratedBy      myapp:codon_optimization_activity .
+  
+  myapp:codon_optimization_activity
+          a                          prov:Activity ;
+          dcterms:title              "Codon Optimization Activity" ;
+          sbol:displayId             "codon_optimization_activity" ;
+          sbol:persistentIdentity    myapp:codon_optimization_activity ;
+          prov:qualifiedAssociation  <http://myapp.com/codon_optimization_activity/association> ;
+          prov:qualifiedUsage        <http://myapp.com/codon_optimization_activity/usage> .
+}

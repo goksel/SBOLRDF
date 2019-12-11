@@ -1,0 +1,105 @@
+{
+  "@graph" : [ {
+    "@id" : "myapp:codon_optimization_activity",
+    "@type" : "prov:Activity",
+    "dcterms:title" : "Codon Optimization Activity",
+    "sbol:displayId" : "codon_optimization_activity",
+    "persistentIdentity" : "myapp:codon_optimization_activity",
+    "qualifiedAssociation" : "myapp:codon_optimization_activity/association",
+    "qualifiedUsage" : "myapp:codon_optimization_activity/usage"
+  }, {
+    "@id" : "myapp:codon_optimization_activity/association",
+    "@type" : "prov:Association",
+    "sbol:displayId" : "association",
+    "persistentIdentity" : "myapp:codon_optimization_activity/association",
+    "agent" : "myapp:codon_optimization_software",
+    "hadRole" : "myapp:codonoptimiser"
+  }, {
+    "@id" : "myapp:codon_optimization_activity/usage",
+    "@type" : "prov:Usage",
+    "sbol:displayId" : "usage",
+    "persistentIdentity" : "myapp:codon_optimization_activity/usage",
+    "entity" : "myapp:non_codon_optimized",
+    "hadRole" : "sbol:source"
+  }, {
+    "@id" : "myapp:codon_optimization_software",
+    "@type" : "prov:Agent",
+    "dcterms:title" : "Codon Optimization Software",
+    "sbol:displayId" : "codon_optimization_software",
+    "persistentIdentity" : "myapp:codon_optimization_software"
+  }, {
+    "@id" : "myapp:codon_optimized",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:title" : "Codon optimised CDS",
+    "sbol:displayId" : "codon_optimized",
+    "persistentIdentity" : "myapp:codon_optimized",
+    "role" : "http://identifiers.org/so/SO:0000316",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+    "wasDerivedFrom" : "myapp:non_codon_optimized",
+    "wasGeneratedBy" : "myapp:codon_optimization_activity"
+  }, {
+    "@id" : "myapp:non_codon_optimized",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:title" : "Non Codon optimised CDS",
+    "sbol:displayId" : "non_codon_optimized",
+    "persistentIdentity" : "myapp:non_codon_optimized",
+    "role" : "http://identifiers.org/so/SO:0000316",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  } ],
+  "@context" : {
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "displayId" : {
+      "@id" : "http://sbols.org/v2#displayId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "persistentIdentity" : {
+      "@id" : "http://sbols.org/v2#persistentIdentity",
+      "@type" : "@id"
+    },
+    "entity" : {
+      "@id" : "http://www.w3.org/ns/prov#entity",
+      "@type" : "@id"
+    },
+    "hadRole" : {
+      "@id" : "http://www.w3.org/ns/prov#hadRole",
+      "@type" : "@id"
+    },
+    "role" : {
+      "@id" : "http://sbols.org/v2#role",
+      "@type" : "@id"
+    },
+    "type" : {
+      "@id" : "http://sbols.org/v2#type",
+      "@type" : "@id"
+    },
+    "agent" : {
+      "@id" : "http://www.w3.org/ns/prov#agent",
+      "@type" : "@id"
+    },
+    "wasGeneratedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type" : "@id"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+      "@type" : "@id"
+    },
+    "qualifiedUsage" : {
+      "@id" : "http://www.w3.org/ns/prov#qualifiedUsage",
+      "@type" : "@id"
+    },
+    "qualifiedAssociation" : {
+      "@id" : "http://www.w3.org/ns/prov#qualifiedAssociation",
+      "@type" : "@id"
+    },
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sbol" : "http://sbols.org/v2#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "myapp" : "http://myapp.com/",
+    "om" : "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+  }
+}

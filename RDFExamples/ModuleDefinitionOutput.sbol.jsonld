@@ -1,0 +1,781 @@
+{
+  "@graph" : [ {
+    "@id" : "http://identifiers.org/uniprot/P03023",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "LacI protein",
+    "dcterms:title" : "LacI",
+    "sbol:displayId" : "P03023",
+    "persistentIdentity" : "http://identifiers.org/uniprot/P03023",
+    "role" : "http://identifiers.org/biomodels.sbo/SBO:0000020",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#Protein"
+  }, {
+    "@id" : "http://identifiers.org/uniprot/P42212",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "GFP protein",
+    "dcterms:title" : "GFP",
+    "sbol:displayId" : "P42212",
+    "persistentIdentity" : "http://identifiers.org/uniprot/P42212",
+    "role" : "http://identifiers.org/biomodels.sbo/SBO:0000011",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#Protein"
+  }, {
+    "@id" : "http://identifiers.org/uniprot/Q6QR72",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "TetR protein",
+    "dcterms:title" : "TetR",
+    "sbol:displayId" : "Q6QR72",
+    "persistentIdentity" : "http://identifiers.org/uniprot/Q6QR72",
+    "role" : "http://identifiers.org/biomodels.sbo/SBO:0000020",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#Protein"
+  }, {
+    "@id" : "http://sbolstandard.org/example/laci_inverter",
+    "@type" : "sbol:ModuleDefinition",
+    "sbol:displayId" : "laci_inverter",
+    "functionalComponent" : [ "http://sbolstandard.org/example/laci_inverter/TF", "http://sbolstandard.org/example/laci_inverter/promoter" ],
+    "interaction" : "http://sbolstandard.org/example/laci_inverter/LacI_pLacI",
+    "persistentIdentity" : "http://sbolstandard.org/example/laci_inverter",
+    "role" : "http://parts.igem.org/cgi/partsdb/pgroup.cgi?pgroup=inverter"
+  }, {
+    "@id" : "http://sbolstandard.org/example/laci_inverter/LacI_pLacI",
+    "@type" : "sbol:Interaction",
+    "sbol:displayId" : "LacI_pLacI",
+    "participation" : [ "http://sbolstandard.org/example/laci_inverter/LacI_pLacI/BBa_R0010", "http://sbolstandard.org/example/laci_inverter/LacI_pLacI/P03023" ],
+    "persistentIdentity" : "http://sbolstandard.org/example/laci_inverter/LacI_pLacI",
+    "type" : "http://identifiers.org/biomodels.sbo/SBO:0000169"
+  }, {
+    "@id" : "http://sbolstandard.org/example/laci_inverter/LacI_pLacI/BBa_R0010",
+    "@type" : "sbol:Participation",
+    "sbol:displayId" : "BBa_R0010",
+    "participant" : "http://sbolstandard.org/example/laci_inverter/promoter",
+    "persistentIdentity" : "http://sbolstandard.org/example/laci_inverter/LacI_pLacI/BBa_R0010",
+    "role" : "http://identifiers.org/biomodels.sbo/SBO:0000598"
+  }, {
+    "@id" : "http://sbolstandard.org/example/laci_inverter/LacI_pLacI/P03023",
+    "@type" : "sbol:Participation",
+    "sbol:displayId" : "P03023",
+    "participant" : "http://sbolstandard.org/example/laci_inverter/TF",
+    "persistentIdentity" : "http://sbolstandard.org/example/laci_inverter/LacI_pLacI/P03023",
+    "role" : "http://identifiers.org/biomodels.sbo/SBO:0000020"
+  }, {
+    "@id" : "http://sbolstandard.org/example/laci_inverter/TF",
+    "@type" : "sbol:FunctionalComponent",
+    "access" : "sbol:public",
+    "definition" : "http://identifiers.org/uniprot/P03023",
+    "direction" : "sbol:inout",
+    "sbol:displayId" : "TF",
+    "persistentIdentity" : "http://sbolstandard.org/example/laci_inverter/TF"
+  }, {
+    "@id" : "http://sbolstandard.org/example/laci_inverter/promoter",
+    "@type" : "sbol:FunctionalComponent",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_R0010",
+    "direction" : "sbol:inout",
+    "sbol:displayId" : "promoter",
+    "persistentIdentity" : "http://sbolstandard.org/example/laci_inverter/promoter"
+  }, {
+    "@id" : "http://sbolstandard.org/example/tetr_inverter",
+    "@type" : "sbol:ModuleDefinition",
+    "sbol:displayId" : "tetr_inverter",
+    "functionalComponent" : [ "http://sbolstandard.org/example/tetr_inverter/TF", "http://sbolstandard.org/example/tetr_inverter/promoter" ],
+    "interaction" : "http://sbolstandard.org/example/tetr_inverter/LacI_pLacI",
+    "persistentIdentity" : "http://sbolstandard.org/example/tetr_inverter",
+    "role" : "http://parts.igem.org/cgi/partsdb/pgroup.cgi?pgroup=inverter"
+  }, {
+    "@id" : "http://sbolstandard.org/example/tetr_inverter/LacI_pLacI",
+    "@type" : "sbol:Interaction",
+    "sbol:displayId" : "LacI_pLacI",
+    "participation" : [ "http://sbolstandard.org/example/tetr_inverter/LacI_pLacI/BBa_R0040", "http://sbolstandard.org/example/tetr_inverter/LacI_pLacI/Q6QR72" ],
+    "persistentIdentity" : "http://sbolstandard.org/example/tetr_inverter/LacI_pLacI",
+    "type" : "http://identifiers.org/biomodels.sbo/SBO:0000169"
+  }, {
+    "@id" : "http://sbolstandard.org/example/tetr_inverter/LacI_pLacI/BBa_R0040",
+    "@type" : "sbol:Participation",
+    "sbol:displayId" : "BBa_R0040",
+    "participant" : "http://sbolstandard.org/example/tetr_inverter/promoter",
+    "persistentIdentity" : "http://sbolstandard.org/example/tetr_inverter/LacI_pLacI/BBa_R0040",
+    "role" : "http://identifiers.org/biomodels.sbo/SBO:0000598"
+  }, {
+    "@id" : "http://sbolstandard.org/example/tetr_inverter/LacI_pLacI/Q6QR72",
+    "@type" : "sbol:Participation",
+    "sbol:displayId" : "Q6QR72",
+    "participant" : "http://sbolstandard.org/example/tetr_inverter/TF",
+    "persistentIdentity" : "http://sbolstandard.org/example/tetr_inverter/LacI_pLacI/Q6QR72",
+    "role" : "http://identifiers.org/biomodels.sbo/SBO:0000020"
+  }, {
+    "@id" : "http://sbolstandard.org/example/tetr_inverter/TF",
+    "@type" : "sbol:FunctionalComponent",
+    "access" : "sbol:public",
+    "definition" : "http://identifiers.org/uniprot/Q6QR72",
+    "direction" : "sbol:inout",
+    "sbol:displayId" : "TF",
+    "persistentIdentity" : "http://sbolstandard.org/example/tetr_inverter/TF"
+  }, {
+    "@id" : "http://sbolstandard.org/example/tetr_inverter/promoter",
+    "@type" : "sbol:FunctionalComponent",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_R0040",
+    "direction" : "sbol:inout",
+    "sbol:displayId" : "promoter",
+    "persistentIdentity" : "http://sbolstandard.org/example/tetr_inverter/promoter"
+  }, {
+    "@id" : "http://sbolstandard.org/example/toggle_switch",
+    "@type" : "sbol:ModuleDefinition",
+    "sbol:displayId" : "toggle_switch",
+    "functionalComponent" : [ "http://sbolstandard.org/example/toggle_switch/LacI", "http://sbolstandard.org/example/toggle_switch/TetR" ],
+    "model" : "http://sbolstandard.org/example/toogleswitch",
+    "module" : [ "http://sbolstandard.org/example/toggle_switch/laci_inverter", "http://sbolstandard.org/example/toggle_switch/tetr_inverter" ],
+    "persistentIdentity" : "http://sbolstandard.org/example/toggle_switch",
+    "role" : "http://sbolstandard.org/example/module_role/toggle_switch"
+  }, {
+    "@id" : "http://sbolstandard.org/example/toggle_switch/LacI",
+    "@type" : "sbol:FunctionalComponent",
+    "access" : "sbol:public",
+    "definition" : "http://identifiers.org/uniprot/P03023",
+    "direction" : "sbol:inout",
+    "sbol:displayId" : "LacI",
+    "persistentIdentity" : "http://sbolstandard.org/example/toggle_switch/LacI"
+  }, {
+    "@id" : "http://sbolstandard.org/example/toggle_switch/TetR",
+    "@type" : "sbol:FunctionalComponent",
+    "access" : "sbol:public",
+    "definition" : "http://identifiers.org/uniprot/Q6QR72",
+    "direction" : "sbol:inout",
+    "sbol:displayId" : "TetR",
+    "persistentIdentity" : "http://sbolstandard.org/example/toggle_switch/TetR"
+  }, {
+    "@id" : "http://sbolstandard.org/example/toggle_switch/laci_inverter",
+    "@type" : "sbol:Module",
+    "definition" : "http://sbolstandard.org/example/laci_inverter",
+    "sbol:displayId" : "laci_inverter",
+    "mapsTo" : "http://sbolstandard.org/example/toggle_switch/laci_inverter/LacI_mapping",
+    "persistentIdentity" : "http://sbolstandard.org/example/toggle_switch/laci_inverter"
+  }, {
+    "@id" : "http://sbolstandard.org/example/toggle_switch/laci_inverter/LacI_mapping",
+    "@type" : "sbol:MapsTo",
+    "sbol:displayId" : "LacI_mapping",
+    "local" : "http://sbolstandard.org/example/toggle_switch/LacI",
+    "persistentIdentity" : "http://sbolstandard.org/example/toggle_switch/laci_inverter/LacI_mapping",
+    "refinement" : "sbol:useRemote",
+    "remote" : "http://sbolstandard.org/example/laci_inverter/TF"
+  }, {
+    "@id" : "http://sbolstandard.org/example/toggle_switch/tetr_inverter",
+    "@type" : "sbol:Module",
+    "definition" : "http://sbolstandard.org/example/tetr_inverter",
+    "sbol:displayId" : "tetr_inverter",
+    "mapsTo" : "http://sbolstandard.org/example/toggle_switch/tetr_inverter/TetR_mapping",
+    "persistentIdentity" : "http://sbolstandard.org/example/toggle_switch/tetr_inverter"
+  }, {
+    "@id" : "http://sbolstandard.org/example/toggle_switch/tetr_inverter/TetR_mapping",
+    "@type" : "sbol:MapsTo",
+    "sbol:displayId" : "TetR_mapping",
+    "local" : "http://sbolstandard.org/example/toggle_switch/TetR",
+    "persistentIdentity" : "http://sbolstandard.org/example/toggle_switch/tetr_inverter/TetR_mapping",
+    "refinement" : "sbol:useRemote",
+    "remote" : "http://sbolstandard.org/example/tetr_inverter/TF"
+  }, {
+    "@id" : "http://sbolstandard.org/example/toogleswitch",
+    "@type" : "sbol:Model",
+    "sbol:displayId" : "toogleswitch",
+    "framework" : "http://identifiers.org/biomodels.sbo/SBO:0000062",
+    "language" : "http://identifiers.org/edam/format_2585",
+    "persistentIdentity" : "http://sbolstandard.org/example/toogleswitch",
+    "source" : "http://virtualparts.org/part/pIKE_Toggle_1"
+  }, {
+    "@id" : "http://www.partsregistry.org/BBa_C0012",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "lacI coding sequence",
+    "dcterms:title" : "lacI",
+    "sbol:displayId" : "BBa_C0012",
+    "persistentIdentity" : "http://www.partsregistry.org/BBa_C0012",
+    "role" : "http://identifiers.org/so/SO:0000316",
+    "sequence" : "http://www.virtualparts.org/part/BBa_C0012",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.partsregistry.org/BBa_C0040",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "tetR coding sequence",
+    "dcterms:title" : "tetR",
+    "sbol:displayId" : "BBa_C0040",
+    "persistentIdentity" : "http://www.partsregistry.org/BBa_C0040",
+    "role" : "http://identifiers.org/so/SO:0000316",
+    "sequence" : "http://www.virtualparts.org/part/BBa_C0040",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.partsregistry.org/BBa_E0040",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "gfp coding sequence",
+    "dcterms:title" : "gfp",
+    "sbol:displayId" : "BBa_E0040",
+    "persistentIdentity" : "http://www.partsregistry.org/BBa_E0040",
+    "role" : "http://identifiers.org/so/SO:0000316",
+    "sequence" : "http://www.virtualparts.org/part/BBa_E0040",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.partsregistry.org/BBa_J61101",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "RBS1",
+    "dcterms:title" : "BBa_J61101 RBS",
+    "sbol:displayId" : "BBa_J61101",
+    "persistentIdentity" : "http://www.partsregistry.org/BBa_J61101",
+    "role" : "http://identifiers.org/so/SO:0000139",
+    "sequence" : "http://www.virtualparts.org/part/BBa_J61101",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.partsregistry.org/BBa_J61120",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "RBS2",
+    "dcterms:title" : "BBa_J61101 RBS",
+    "sbol:displayId" : "BBa_J61120",
+    "persistentIdentity" : "http://www.partsregistry.org/BBa_J61120",
+    "role" : "http://identifiers.org/so/SO:0000139",
+    "sequence" : "http://www.virtualparts.org/part/BBa_J61120",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.partsregistry.org/BBa_J61130",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "RBS2",
+    "dcterms:title" : "BBa_J61101 RBS",
+    "sbol:displayId" : "BBa_J61130",
+    "persistentIdentity" : "http://www.partsregistry.org/BBa_J61130",
+    "role" : "http://identifiers.org/so/SO:0000139",
+    "sequence" : "http://www.virtualparts.org/part/BBa_J61130",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.partsregistry.org/BBa_R0010",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "pLacI promoter",
+    "dcterms:title" : "pLacI",
+    "sbol:displayId" : "BBa_R0010",
+    "persistentIdentity" : "http://www.partsregistry.org/BBa_R0010",
+    "role" : "http://identifiers.org/so/SO:0000167",
+    "sequence" : "http://www.virtualparts.org/part/BBa_R0010",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.partsregistry.org/BBa_R0040",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "pTet promoter",
+    "dcterms:title" : "pTetR",
+    "sbol:displayId" : "BBa_R0040",
+    "persistentIdentity" : "http://www.partsregistry.org/BBa_R0040",
+    "role" : "http://identifiers.org/so/SO:0000167",
+    "sequence" : "http://www.virtualparts.org/part/BBa_R0040",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.partsregistry.org/ECK120029600",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "Terminator1",
+    "dcterms:title" : "ECK120029600",
+    "sbol:displayId" : "ECK120029600",
+    "persistentIdentity" : "http://www.partsregistry.org/ECK120029600",
+    "role" : "http://identifiers.org/so/SO:0000141",
+    "sequence" : "http://www.virtualparts.org/part/ECK120029600",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.partsregistry.org/ECK120033736",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "Terminator2",
+    "dcterms:title" : "ECK120033736",
+    "sbol:displayId" : "ECK120033736",
+    "persistentIdentity" : "http://www.partsregistry.org/ECK120033736",
+    "role" : "http://identifiers.org/so/SO:0000141",
+    "sequence" : "http://www.virtualparts.org/part/ECK120033736",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/BBa_C0012",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_C0012",
+    "sbol:elements" : "atggtgaatgtgaaaccagtaacgttatacgatgtcgcagagtatgccggtgtctcttatcagaccgtttcccgcgtggtgaaccaggccagccacgtttctgcgaaaacgcgggaaaaagtggaagcggcgatggcggagctgaattacattcccaaccgcgtggcacaacaactggcgggcaaacagtcgttgctgattggcgttgccacctccagtctggccctgcacgcgccgtcgcaaattgtcgcggcgattaaatctcgcgccgatcaactgggtgccagcgtggtggtgtcgatggtagaacgaagcggcgtcgaagcctgtaaagcggcggtgcacaatcttctcgcgcaacgcgtcagtgggctgatcattaactatccgctggatgaccaggatgccattgctgtggaagctgcctgcactaatgttccggcgttatttcttgatgtctctgaccagacacccatcaacagtattattttctcccatgaagacggtacgcgactgggcgtggagcatctggtcgcattgggtcaccagcaaatcgcgctgttagcgggcccattaagttctgtctcggcgcgtctgcgtctggctggctggcataaatatctcactcgcaatcaaattcagccgatagcggaacgggaaggcgactggagtgccatgtccggttttcaacaaaccatgcaaatgctgaatgagggcatcgttcccactgcgatgctggttgccaacgatcagatggcgctgggcgcaatgcgcgccattaccgagtccgggctgcgcgttggtgcggatatctcggtagtgggatacgacgataccgaagacagctcatgttatatcccgccgttaaccaccatcaaacaggattttcgcctgctggggcaaaccagcgtggaccgcttgctgcaactctctcagggccaggcggtgaagggcaatcagctgttgcccgtctcactggtgaaaagaaaaaccaccctggcgcccaatacgcaaaccgcctctccccgcgcgttggccgattcattaatgcagctggcacgacaggtttcccgactggaaagcgggcaggctgcaaacgacgaaaactacgctttagtagcttaataa",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/BBa_C0012"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/BBa_C0040",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_C0040",
+    "sbol:elements" : "atgtccagattagataaaagtaaagtgattaacagcgcattagagctgcttaatgaggtcggaatcgaaggtttaacaacccgtaaactcgcccagaagctaggtgtagagcagcctacattgtattggcatgtaaaaaataagcgggctttgctcgacgccttagccattgagatgttagataggcaccatactcacttttgccctttagaaggggaaagctggcaagattttttacgtaataacgctaaaagttttagatgtgctttactaagtcatcgcgatggagcaaaagtacatttaggtacacggcctacagaaaaacagtatgaaactctcgaaaatcaattagcctttttatgccaacaaggtttttcactagagaatgcattatatgcactcagcgctgtggggcattttactttaggttgcgtattggaagatcaagagcatcaagtcgctaaagaagaaagggaaacacctactactgatagtatgccgccattattacgacaagctatcgaattatttgatcaccaaggtgcagagccagccttcttattcggccttgaattgatcatatgcggattagaaaaacaacttaaatgtgaaagtgggtccgctgcaaacgacgaaaactacgctttagtagcttaataa",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/BBa_C0040"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/BBa_E0040",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_E0040",
+    "sbol:elements" : "atgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataa",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/BBa_E0040"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/BBa_J61101",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_J61101",
+    "sbol:elements" : "aaagacaggacc",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/BBa_J61101"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/BBa_J61120",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_J61120",
+    "sbol:elements" : "aaagacaggacc",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/BBa_J61120"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/BBa_J61130",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_J61130",
+    "sbol:elements" : "aaagaaacgaca",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/BBa_J61130"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/BBa_R0010",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_R0010",
+    "sbol:elements" : "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcac",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/BBa_R0010"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/BBa_R0040",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_R0040",
+    "sbol:elements" : "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcac",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/BBa_R0040"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/ECK120029600",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "ECK120029600",
+    "sbol:elements" : "ttcagccaaaaaacttaagaccgccggtcttgtccactaccttgcagtaatgcggtggacaggatcggcggttttcttttctcttctcaa",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/ECK120029600"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/ECK120033736",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "ECK120033736",
+    "sbol:elements" : "ttcagccaaaaaacttaagaccgccggtcttgtccactaccttgcagtaatgcggtggacaggatcggcggttttcttttctcttctcaa",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://www.virtualparts.org/part/ECK120033736"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "TetR Inverter",
+    "dcterms:title" : "TetR Inverter",
+    "component" : [ "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_R0040", "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_C0012", "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_J61101", "http://www.virtualparts.org/part/pIKELeftCassette_1/ECK120029600" ],
+    "sbol:displayId" : "pIKELeftCassette_1",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1",
+    "role" : "http://identifiers.org/so/SO:0000280",
+    "sequenceAnnotation" : [ "http://www.virtualparts.org/part/pIKELeftCassette_1/anno3", "http://www.virtualparts.org/part/pIKELeftCassette_1/anno1", "http://www.virtualparts.org/part/pIKELeftCassette_1/anno4", "http://www.virtualparts.org/part/pIKELeftCassette_1/anno2" ],
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_C0012",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_C0012",
+    "sbol:displayId" : "BBa_C0012",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_C0012"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_J61101",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_J61101",
+    "sbol:displayId" : "BBa_J61101",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_J61101"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_R0040",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_R0040",
+    "sbol:displayId" : "BBa_R0040",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_R0040"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/ECK120029600",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/ECK120029600",
+    "sbol:displayId" : "ECK120029600",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/ECK120029600"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno1",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_R0040",
+    "sbol:displayId" : "anno1",
+    "location" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno1/location1",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno1"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno1/location1",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location1",
+    "sbol:end" : "55",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno1/location1",
+    "sbol:start" : "1"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno2",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_J61101",
+    "sbol:displayId" : "anno2",
+    "location" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno2/location2",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno2"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno2/location2",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location2",
+    "sbol:end" : "68",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno2/location2",
+    "sbol:start" : "56"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno3",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKELeftCassette_1/BBa_C0012",
+    "sbol:displayId" : "anno3",
+    "location" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno3/location3",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno3"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno3/location3",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location3",
+    "sbol:end" : "1197",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno3/location3",
+    "sbol:start" : "69"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno4",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKELeftCassette_1/ECK120029600",
+    "sbol:displayId" : "anno4",
+    "location" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno4/location4",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno4"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno4/location4",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location4",
+    "sbol:end" : "1288",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKELeftCassette_1/anno4/location4",
+    "sbol:start" : "1198"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "LacI Inverter",
+    "dcterms:title" : "LacI Inverter",
+    "component" : [ "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_J61120", "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_E0040", "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_J61130", "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_R0010", "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_C0040", "http://www.virtualparts.org/part/pIKERightCassette_1/ECK120033736" ],
+    "sbol:displayId" : "pIKERightCassette_1",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1",
+    "role" : "http://identifiers.org/so/SO:0000280",
+    "sequenceAnnotation" : [ "http://www.virtualparts.org/part/pIKERightCassette_1/anno5", "http://www.virtualparts.org/part/pIKERightCassette_1/anno6", "http://www.virtualparts.org/part/pIKERightCassette_1/anno2", "http://www.virtualparts.org/part/pIKERightCassette_1/anno4", "http://www.virtualparts.org/part/pIKERightCassette_1/anno1", "http://www.virtualparts.org/part/pIKERightCassette_1/anno3" ],
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_C0040",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_C0040",
+    "sbol:displayId" : "BBa_C0040",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_C0040"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_E0040",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_E0040",
+    "sbol:displayId" : "BBa_E0040",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_E0040"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_J61120",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_J61120",
+    "sbol:displayId" : "BBa_J61120",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_J61120"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_J61130",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_J61130",
+    "sbol:displayId" : "BBa_J61130",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_J61130"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_R0010",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/BBa_R0010",
+    "sbol:displayId" : "BBa_R0010",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_R0010"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/ECK120033736",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.partsregistry.org/ECK120033736",
+    "sbol:displayId" : "ECK120033736",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/ECK120033736"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno1",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_R0010",
+    "sbol:displayId" : "anno1",
+    "location" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno1/location1",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno1"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno1/location1",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location1",
+    "sbol:end" : "55",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno1/location1",
+    "sbol:start" : "1"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno2",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_J61120",
+    "sbol:displayId" : "anno2",
+    "location" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno2/location2",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno2"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno2/location2",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location2",
+    "sbol:end" : "68",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno2/location2",
+    "sbol:start" : "56"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno3",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_C0040",
+    "sbol:displayId" : "anno3",
+    "location" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno3/location3",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno3"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno3/location3",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location3",
+    "sbol:end" : "729",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno3/location3",
+    "sbol:start" : "69"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno4",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_J61130",
+    "sbol:displayId" : "anno4",
+    "location" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno4/location4",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno4"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno4/location4",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location4",
+    "sbol:end" : "742",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno4/location4",
+    "sbol:start" : "730"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno5",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKERightCassette_1/BBa_E0040",
+    "sbol:displayId" : "anno5",
+    "location" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno5/location5",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno5"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno5/location5",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location5",
+    "sbol:end" : "1463",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno5/location5",
+    "sbol:start" : "743"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno6",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKERightCassette_1/ECK120033736",
+    "sbol:displayId" : "anno6",
+    "location" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno6/location6",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno6"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno6/location6",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location6",
+    "sbol:end" : "1554",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKERightCassette_1/anno6/location6",
+    "sbol:start" : "1464"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKE_Toggle_1",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "LacI/TetR Toggle Switch",
+    "dcterms:title" : "LacI/TetR Toggle Switch",
+    "component" : [ "http://www.virtualparts.org/part/pIKE_Toggle_1/pIKELeftCassette_1", "http://www.virtualparts.org/part/pIKE_Toggle_1/pIKERightCassette_1" ],
+    "sbol:displayId" : "pIKE_Toggle_1",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKE_Toggle_1",
+    "role" : "http://identifiers.org/so/SO:0000280",
+    "sequenceAnnotation" : [ "http://www.virtualparts.org/part/pIKE_Toggle_1/anno2", "http://www.virtualparts.org/part/pIKE_Toggle_1/anno1" ],
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno1",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKE_Toggle_1/pIKELeftCassette_1",
+    "sbol:displayId" : "anno1",
+    "location" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno1/location1",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno1"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno1/location1",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location1",
+    "sbol:end" : "1285",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno1/location1",
+    "sbol:start" : "1"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno2",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "http://www.virtualparts.org/part/pIKE_Toggle_1/pIKERightCassette_1",
+    "sbol:displayId" : "anno2",
+    "location" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno2/location2",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno2"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno2/location2",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location2",
+    "sbol:end" : "2834",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKE_Toggle_1/anno2/location2",
+    "sbol:start" : "1286"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKE_Toggle_1/pIKELeftCassette_1",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.virtualparts.org/part/pIKELeftCassette_1",
+    "sbol:displayId" : "pIKELeftCassette_1",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKE_Toggle_1/pIKELeftCassette_1"
+  }, {
+    "@id" : "http://www.virtualparts.org/part/pIKE_Toggle_1/pIKERightCassette_1",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "http://www.virtualparts.org/part/pIKERightCassette_1",
+    "sbol:displayId" : "pIKERightCassette_1",
+    "persistentIdentity" : "http://www.virtualparts.org/part/pIKE_Toggle_1/pIKERightCassette_1"
+  } ],
+  "@context" : {
+    "participation" : {
+      "@id" : "http://sbols.org/v2#participation",
+      "@type" : "@id"
+    },
+    "type" : {
+      "@id" : "http://sbols.org/v2#type",
+      "@type" : "@id"
+    },
+    "displayId" : {
+      "@id" : "http://sbols.org/v2#displayId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "persistentIdentity" : {
+      "@id" : "http://sbols.org/v2#persistentIdentity",
+      "@type" : "@id"
+    },
+    "framework" : {
+      "@id" : "http://sbols.org/v2#framework",
+      "@type" : "@id"
+    },
+    "language" : {
+      "@id" : "http://sbols.org/v2#language",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://sbols.org/v2#source",
+      "@type" : "@id"
+    },
+    "sequence" : {
+      "@id" : "http://sbols.org/v2#sequence",
+      "@type" : "@id"
+    },
+    "role" : {
+      "@id" : "http://sbols.org/v2#role",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "definition" : {
+      "@id" : "http://sbols.org/v2#definition",
+      "@type" : "@id"
+    },
+    "access" : {
+      "@id" : "http://sbols.org/v2#access",
+      "@type" : "@id"
+    },
+    "component" : {
+      "@id" : "http://sbols.org/v2#component",
+      "@type" : "@id"
+    },
+    "location" : {
+      "@id" : "http://sbols.org/v2#location",
+      "@type" : "@id"
+    },
+    "encoding" : {
+      "@id" : "http://sbols.org/v2#encoding",
+      "@type" : "@id"
+    },
+    "elements" : {
+      "@id" : "http://sbols.org/v2#elements",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "orientation" : {
+      "@id" : "http://sbols.org/v2#orientation",
+      "@type" : "@id"
+    },
+    "end" : {
+      "@id" : "http://sbols.org/v2#end",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "start" : {
+      "@id" : "http://sbols.org/v2#start",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "local" : {
+      "@id" : "http://sbols.org/v2#local",
+      "@type" : "@id"
+    },
+    "remote" : {
+      "@id" : "http://sbols.org/v2#remote",
+      "@type" : "@id"
+    },
+    "refinement" : {
+      "@id" : "http://sbols.org/v2#refinement",
+      "@type" : "@id"
+    },
+    "interaction" : {
+      "@id" : "http://sbols.org/v2#interaction",
+      "@type" : "@id"
+    },
+    "functionalComponent" : {
+      "@id" : "http://sbols.org/v2#functionalComponent",
+      "@type" : "@id"
+    },
+    "sequenceAnnotation" : {
+      "@id" : "http://sbols.org/v2#sequenceAnnotation",
+      "@type" : "@id"
+    },
+    "module" : {
+      "@id" : "http://sbols.org/v2#module",
+      "@type" : "@id"
+    },
+    "model" : {
+      "@id" : "http://sbols.org/v2#model",
+      "@type" : "@id"
+    },
+    "direction" : {
+      "@id" : "http://sbols.org/v2#direction",
+      "@type" : "@id"
+    },
+    "participant" : {
+      "@id" : "http://sbols.org/v2#participant",
+      "@type" : "@id"
+    },
+    "mapsTo" : {
+      "@id" : "http://sbols.org/v2#mapsTo",
+      "@type" : "@id"
+    },
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sbol" : "http://sbols.org/v2#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "om" : "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+  }
+}

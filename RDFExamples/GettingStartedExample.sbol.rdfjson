@@ -1,0 +1,418 @@
+{ 
+  "http://partsregistry.org/cd/BBa_K137046" : { 
+    "http://sbols.org/v2#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/chebi/CHEBI:4705"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#ComponentDefinition"
+    }
+     ] ,
+    "http://www.async.ece.utah.edu/datasheet" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/gen/datasheet/1.0"
+    }
+     ] ,
+    "http://sbols.org/v2#role" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/so/SO:0000167"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "BBa_K137046"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_K137046"
+    }
+     ] ,
+    "http://partsregistry.org/experience" : [ { 
+      "type" : "uri" ,
+      "value" : "http://parts.igem.org/Part:BBa_R0040"
+    }
+     ] ,
+    "http://purl.org/dc/terms/description" : [ { 
+      "type" : "literal" ,
+      "value" : "TetR repressible promoter"
+    }
+     ] ,
+    "http://purl.org/dc/terms/title" : [ { 
+      "type" : "literal" ,
+      "value" : "p(tetR)"
+    }
+     ] ,
+    "http://sbols.org/v2#sequence" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/seq/seq_K137046"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/seq/partseq_187"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/pIKELeftCassette" : { 
+    "http://sbols.org/v2#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/chebi/CHEBI:4705"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#ComponentDefinition"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "pIKELeftCassette"
+    }
+     ] ,
+    "http://sbols.org/v2#sequenceConstraint" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/pIKELeftCassette/pIKELeftCassette_sc"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/pIKELeftCassette"
+    }
+     ] ,
+    "http://sbols.org/v2#component" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/pIKELeftCassette/BBa_R0040"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/pIKELeftCassette/BBa_C0012"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/pIKELeftCassette/BBa_R0040" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#Component"
+    }
+     ] ,
+    "http://sbols.org/v2#access" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#public"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "BBa_R0040"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/pIKELeftCassette/BBa_R0040"
+    }
+     ] ,
+    "http://sbols.org/v2#definition" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_R0040"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/gen/datasheet/1.0" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.async.ece.utah.edu/datasheet"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "datasheet"
+    }
+     ] ,
+    "http://www.async.ece.utah.edu/transcriptionRate" : [ { 
+      "type" : "literal" ,
+      "value" : "0.75"
+    }
+     ] ,
+    "http://www.async.ece.utah.edu/characterizationData" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.async.ece.utah.edu//measurement/Part:BBa_R0040"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/gen/datasheet"
+    }
+     ] ,
+    "http://sbols.org/v2#version" : [ { 
+      "type" : "literal" ,
+      "value" : "1.0"
+    }
+     ] ,
+    "http://purl.org/dc/terms/title" : [ { 
+      "type" : "literal" ,
+      "value" : "Datasheet for Custom Parameters"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/pIKELeftCassette/pIKELeftCassette_sc" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#SequenceConstraint"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "pIKELeftCassette_sc"
+    }
+     ] ,
+    "http://sbols.org/v2#restriction" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#precedes"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/pIKELeftCassette/pIKELeftCassette_sc"
+    }
+     ] ,
+    "http://sbols.org/v2#object" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/pIKELeftCassette/BBa_C0012"
+    }
+     ] ,
+    "http://sbols.org/v2#subject" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/pIKELeftCassette/BBa_R0040"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/seq/partseq_187" : { 
+    "http://sbols.org/v2#encoding" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#Sequence"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "partseq_187"
+    }
+     ] ,
+    "http://sbols.org/v2#elements" : [ { 
+      "type" : "literal" ,
+      "value" : "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcac"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/seq/partseq_187"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/seq/seq_K137046" : { 
+    "http://sbols.org/v2#encoding" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#Sequence"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "seq_K137046"
+    }
+     ] ,
+    "http://sbols.org/v2#elements" : [ { 
+      "type" : "literal" ,
+      "value" : "gtgctcagtatctctatcactgatagggatgtcaatctctatcactgatagggactctagtatataaacgcagaaaggcccacccgaaggtgagccagtgtgactctagtagagagcgttcaccgacaaacaacagataaaacgaaaggc"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/seq/seq_K137046"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/pIKELeftCassette/BBa_C0012" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#Component"
+    }
+     ] ,
+    "http://sbols.org/v2#access" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#public"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "BBa_C0012"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/pIKELeftCassette/BBa_C0012"
+    }
+     ] ,
+    "http://sbols.org/v2#definition" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_C0012"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/BBa_C0012" : { 
+    "http://sbols.org/v2#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/chebi/CHEBI:4705"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#ComponentDefinition"
+    }
+     ] ,
+    "http://sbols.org/v2#role" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/so/SO:0000316"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "BBa_C0012"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_C0012"
+    }
+     ] ,
+    "http://purl.org/dc/terms/description" : [ { 
+      "type" : "literal" ,
+      "value" : "lacI repressor from E. coli (+LVA)"
+    }
+     ] ,
+    "http://sbols.org/v2#sequence" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/seq/partseq_153"
+    }
+     ] ,
+    "http://purl.org/dc/terms/title" : [ { 
+      "type" : "literal" ,
+      "value" : "lacI"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/seq/partseq_153" : { 
+    "http://sbols.org/v2#encoding" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#Sequence"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "partseq_153"
+    }
+     ] ,
+    "http://sbols.org/v2#elements" : [ { 
+      "type" : "literal" ,
+      "value" : "atggtgaatgtgaaaccagtaacgttatacgatgtcgcagagtatgccggtgtctcttatcagaccgtttcccgcgtggtgaaccaggccagccacgtttctgcgaaaacgcgggaaaaagtggaagcggcgatggcggagctgaattacattcccaaccgcgtggcacaacaactggcgggcaaacagtcgttgctgattggcgttgccacctccagtctggccctgcacgcgccgtcgcaaattgtcgcggcgattaaatctcgcgccgatcaactgggtgccagcgtggtggtgtcgatggtagaacgaagcggcgtcgaagcctgtaaagcggcggtgcacaatcttctcgcgcaacgcgtcagtgggctgatcattaactatccgctggatgaccaggatgccattgctgtggaagctgcctgcactaatgttccggcgttatttcttgatgtctctgaccagacacccatcaacagtattattttctcccatgaagacggtacgcgactgggcgtggagcatctggtcgcattgggtcaccagcaaatcgcgctgttagcgggcccattaagttctgtctcggcgcgtctgcgtctggctggctggcataaatatctcactcgcaatcaaattcagccgatagcggaacgggaaggcgactggagtgccatgtccggttttcaacaaaccatgcaaatgctgaatgagggcatcgttcccactgcgatgctggttgccaacgatcagatggcgctgggcgcaatgcgcgccattaccgagtccgggctgcgcgttggtgcggatatctcggtagtgggatacgacgataccgaagacagctcatgttatatcccgccgttaaccaccatcaaacaggattttcgcctgctggggcaaaccagcgtggaccgcttgctgcaactctctcagggccaggcggtgaagggcaatcagctgttgcccgtctcactggtgaaaagaaaaaccaccctggcgcccaatacgcaaaccgcctctccccgcgcgttggccgattcattaatgcagctggcacgacaggtttcccgactggaaagcgggcaggctgcaaacgacgaaaactacgctttagtagcttaataa"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/seq/partseq_153"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/BBa_R0040" : { 
+    "http://sbols.org/v2#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/chebi/CHEBI:4705"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#ComponentDefinition"
+    }
+     ] ,
+    "http://www.async.ece.utah.edu/datasheet" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/gen/datasheet/1.0"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "BBa_R0040"
+    }
+     ] ,
+    "http://sbols.org/v2#role" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/so/SO:0000167"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_R0040"
+    }
+     ] ,
+    "http://partsregistry.org/experience" : [ { 
+      "type" : "uri" ,
+      "value" : "http://parts.igem.org/Part:BBa_R0040"
+    }
+     ] ,
+    "http://purl.org/dc/terms/description" : [ { 
+      "type" : "literal" ,
+      "value" : "TetR repressible promoter"
+    }
+     ] ,
+    "http://sbols.org/v2#sequence" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/seq/partseq_187"
+    }
+     ] ,
+    "http://purl.org/dc/terms/title" : [ { 
+      "type" : "literal" ,
+      "value" : "p(tetR)"
+    }
+     ]
+  }
+}

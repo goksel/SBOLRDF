@@ -1,0 +1,56 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:sbol="http://sbols.org/v2#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns="http://testbase.org"
+    xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+   <sbol:ComponentDefinition rdf:about="http://partsregistry.org/cd/BBa_J23119">
+      <sbol:role rdf:resource="http://identifiers.org/so/SO:0000613"/>
+      <dcterms:description>Constitutive promoter</dcterms:description>
+      <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+      <sbol:sequence>
+         <sbol:Sequence rdf:about="http://partsregistry.org/seq/BBa_J23119"/>
+      </sbol:sequence>
+      <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+      <prov:wasDerivedFrom rdf:resource="http://partsregistry.org/Part:BBa_J23119"/>
+      <dcterms:title>J23119 promoter</dcterms:title>
+      <sbol:sequenceAnnotation>
+         <sbol:SequenceAnnotation rdf:about="http://partsregistry.org/cd/BBa_J23119/cutat12">
+            <sbol:location>
+               <sbol:Cut rdf:about="http://partsregistry.org/cd/BBa_J23119/cutat12/cut2">
+                  <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+                  <sbol:at>12</sbol:at>
+                  <sbol:displayId>cut2</sbol:displayId>
+                  <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/BBa_J23119/cutat12/cut2"/>
+               </sbol:Cut>
+            </sbol:location>
+            <sbol:displayId>cutat12</sbol:displayId>
+            <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/BBa_J23119/cutat12"/>
+         </sbol:SequenceAnnotation>
+      </sbol:sequenceAnnotation>
+      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/BBa_J23119"/>
+      <sbol:displayId>BBa_J23119</sbol:displayId>
+      <sbol:sequenceAnnotation>
+         <sbol:SequenceAnnotation rdf:about="http://partsregistry.org/cd/BBa_J23119/cutat10">
+            <sbol:location>
+               <sbol:Cut rdf:about="http://partsregistry.org/cd/BBa_J23119/cutat10/cut1">
+                  <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+                  <sbol:at>10</sbol:at>
+                  <sbol:displayId>cut1</sbol:displayId>
+                  <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/BBa_J23119/cutat10/cut1"/>
+               </sbol:Cut>
+            </sbol:location>
+            <sbol:displayId>cutat10</sbol:displayId>
+            <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/BBa_J23119/cutat10"/>
+         </sbol:SequenceAnnotation>
+      </sbol:sequenceAnnotation>
+   </sbol:ComponentDefinition>
+   <sbol:Sequence rdf:about="http://partsregistry.org/seq/BBa_J23119">
+      <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+      <sbol:elements>ttgacagctagctcagtcctaggtataatgctagc</sbol:elements>
+      <prov:wasDerivedFrom rdf:resource="http://parts.igem.org/Part:BBa_J23119:Design"/>
+      <sbol:displayId>BBa_J23119</sbol:displayId>
+      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/seq/BBa_J23119"/>
+   </sbol:Sequence>
+</rdf:RDF>

@@ -1,0 +1,197 @@
+{ 
+  "http://partsregistry.org/cd/BBa_J23119/cutat12/cut2" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#Cut"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "cut2"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_J23119/cutat12/cut2"
+    }
+     ] ,
+    "http://sbols.org/v2#at" : [ { 
+      "type" : "literal" ,
+      "value" : "12"
+    }
+     ] ,
+    "http://sbols.org/v2#orientation" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#inline"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/BBa_J23119/cutat10" : { 
+    "http://sbols.org/v2#location" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_J23119/cutat10/cut1"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#SequenceAnnotation"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "cutat10"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_J23119/cutat10"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/BBa_J23119/cutat12" : { 
+    "http://sbols.org/v2#location" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_J23119/cutat12/cut2"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#SequenceAnnotation"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "cutat12"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_J23119/cutat12"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/BBa_J23119" : { 
+    "http://sbols.org/v2#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#ComponentDefinition"
+    }
+     ] ,
+    "http://sbols.org/v2#role" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/so/SO:0000613"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/so/SO:0000167"
+    }
+     ] ,
+    "http://sbols.org/v2#sequenceAnnotation" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_J23119/cutat10"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_J23119/cutat12"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "BBa_J23119"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_J23119"
+    }
+     ] ,
+    "http://purl.org/dc/terms/description" : [ { 
+      "type" : "literal" ,
+      "value" : "Constitutive promoter"
+    }
+     ] ,
+    "http://sbols.org/v2#sequence" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/seq/BBa_J23119"
+    }
+     ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/Part:BBa_J23119"
+    }
+     ] ,
+    "http://purl.org/dc/terms/title" : [ { 
+      "type" : "literal" ,
+      "value" : "J23119 promoter"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/seq/BBa_J23119" : { 
+    "http://sbols.org/v2#encoding" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#Sequence"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "BBa_J23119"
+    }
+     ] ,
+    "http://sbols.org/v2#elements" : [ { 
+      "type" : "literal" ,
+      "value" : "ttgacagctagctcagtcctaggtataatgctagc"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/seq/BBa_J23119"
+    }
+     ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { 
+      "type" : "uri" ,
+      "value" : "http://parts.igem.org/Part:BBa_J23119:Design"
+    }
+     ]
+  }
+   ,
+  "http://partsregistry.org/cd/BBa_J23119/cutat10/cut1" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#Cut"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "cut1"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://partsregistry.org/cd/BBa_J23119/cutat10/cut1"
+    }
+     ] ,
+    "http://sbols.org/v2#at" : [ { 
+      "type" : "literal" ,
+      "value" : "10"
+    }
+     ] ,
+    "http://sbols.org/v2#orientation" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#inline"
+    }
+     ]
+  }
+}

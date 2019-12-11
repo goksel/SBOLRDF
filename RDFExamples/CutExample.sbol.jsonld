@@ -1,0 +1,112 @@
+{
+  "@graph" : [ {
+    "@id" : "http://partsregistry.org/cd/BBa_J23119",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "Constitutive promoter",
+    "dcterms:title" : "J23119 promoter",
+    "sbol:displayId" : "BBa_J23119",
+    "persistentIdentity" : "http://partsregistry.org/cd/BBa_J23119",
+    "role" : [ "http://identifiers.org/so/SO:0000613", "http://identifiers.org/so/SO:0000167" ],
+    "sequence" : "http://partsregistry.org/seq/BBa_J23119",
+    "sequenceAnnotation" : [ "http://partsregistry.org/cd/BBa_J23119/cutat12", "http://partsregistry.org/cd/BBa_J23119/cutat10" ],
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+    "wasDerivedFrom" : "http://partsregistry.org/Part:BBa_J23119"
+  }, {
+    "@id" : "http://partsregistry.org/cd/BBa_J23119/cutat10",
+    "@type" : "sbol:SequenceAnnotation",
+    "sbol:displayId" : "cutat10",
+    "location" : "http://partsregistry.org/cd/BBa_J23119/cutat10/cut1",
+    "persistentIdentity" : "http://partsregistry.org/cd/BBa_J23119/cutat10"
+  }, {
+    "@id" : "http://partsregistry.org/cd/BBa_J23119/cutat10/cut1",
+    "@type" : "sbol:Cut",
+    "sbol:at" : "10",
+    "sbol:displayId" : "cut1",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://partsregistry.org/cd/BBa_J23119/cutat10/cut1"
+  }, {
+    "@id" : "http://partsregistry.org/cd/BBa_J23119/cutat12",
+    "@type" : "sbol:SequenceAnnotation",
+    "sbol:displayId" : "cutat12",
+    "location" : "http://partsregistry.org/cd/BBa_J23119/cutat12/cut2",
+    "persistentIdentity" : "http://partsregistry.org/cd/BBa_J23119/cutat12"
+  }, {
+    "@id" : "http://partsregistry.org/cd/BBa_J23119/cutat12/cut2",
+    "@type" : "sbol:Cut",
+    "sbol:at" : "12",
+    "sbol:displayId" : "cut2",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "http://partsregistry.org/cd/BBa_J23119/cutat12/cut2"
+  }, {
+    "@id" : "http://partsregistry.org/seq/BBa_J23119",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_J23119",
+    "sbol:elements" : "ttgacagctagctcagtcctaggtataatgctagc",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "http://partsregistry.org/seq/BBa_J23119",
+    "wasDerivedFrom" : "http://parts.igem.org/Part:BBa_J23119:Design"
+  } ],
+  "@context" : {
+    "role" : {
+      "@id" : "http://sbols.org/v2#role",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "type" : {
+      "@id" : "http://sbols.org/v2#type",
+      "@type" : "@id"
+    },
+    "sequence" : {
+      "@id" : "http://sbols.org/v2#sequence",
+      "@type" : "@id"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sequenceAnnotation" : {
+      "@id" : "http://sbols.org/v2#sequenceAnnotation",
+      "@type" : "@id"
+    },
+    "persistentIdentity" : {
+      "@id" : "http://sbols.org/v2#persistentIdentity",
+      "@type" : "@id"
+    },
+    "displayId" : {
+      "@id" : "http://sbols.org/v2#displayId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "location" : {
+      "@id" : "http://sbols.org/v2#location",
+      "@type" : "@id"
+    },
+    "orientation" : {
+      "@id" : "http://sbols.org/v2#orientation",
+      "@type" : "@id"
+    },
+    "at" : {
+      "@id" : "http://sbols.org/v2#at",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "encoding" : {
+      "@id" : "http://sbols.org/v2#encoding",
+      "@type" : "@id"
+    },
+    "elements" : {
+      "@id" : "http://sbols.org/v2#elements",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sbol" : "http://sbols.org/v2#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "om" : "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "@graph" : [ {
+    "@id" : "pr:cd/BBa_C0012",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "lacI repressor from E. coli (+LVA)",
+    "dcterms:title" : "lacI",
+    "sbol:displayId" : "BBa_C0012",
+    "persistentIdentity" : "pr:cd/BBa_C0012",
+    "role" : "http://identifiers.org/so/SO:0000316",
+    "sequence" : "pr:seq/partseq_153",
+    "type" : [ "http://identifiers.org/chebi/CHEBI:4705", "http://www.biopax.org/release/biopax-level3.owl#DnaRegion" ]
+  }, {
+    "@id" : "pr:cd/BBa_K137046",
+    "@type" : "sbol:ComponentDefinition",
+    "experience" : "http://parts.igem.org/Part:BBa_R0040",
+    "dcterms:description" : "TetR repressible promoter",
+    "dcterms:title" : "p(tetR)",
+    "sbol:displayId" : "BBa_K137046",
+    "persistentIdentity" : "pr:cd/BBa_K137046",
+    "role" : "http://identifiers.org/so/SO:0000167",
+    "sequence" : [ "pr:seq/seq_K137046", "pr:seq/partseq_187" ],
+    "type" : [ "http://www.biopax.org/release/biopax-level3.owl#DnaRegion", "http://identifiers.org/chebi/CHEBI:4705" ],
+    "datasheet" : "pr:gen/datasheet/1.0"
+  }, {
+    "@id" : "pr:cd/BBa_R0040",
+    "@type" : "sbol:ComponentDefinition",
+    "experience" : "http://parts.igem.org/Part:BBa_R0040",
+    "dcterms:description" : "TetR repressible promoter",
+    "dcterms:title" : "p(tetR)",
+    "sbol:displayId" : "BBa_R0040",
+    "persistentIdentity" : "pr:cd/BBa_R0040",
+    "role" : "http://identifiers.org/so/SO:0000167",
+    "sequence" : "pr:seq/partseq_187",
+    "type" : [ "http://www.biopax.org/release/biopax-level3.owl#DnaRegion", "http://identifiers.org/chebi/CHEBI:4705" ],
+    "datasheet" : "pr:gen/datasheet/1.0"
+  }, {
+    "@id" : "pr:cd/pIKELeftCassette",
+    "@type" : "sbol:ComponentDefinition",
+    "component" : [ "pr:cd/pIKELeftCassette/BBa_R0040", "pr:cd/pIKELeftCassette/BBa_C0012" ],
+    "sbol:displayId" : "pIKELeftCassette",
+    "persistentIdentity" : "pr:cd/pIKELeftCassette",
+    "sequenceConstraint" : "pr:cd/pIKELeftCassette/pIKELeftCassette_sc",
+    "type" : [ "http://identifiers.org/chebi/CHEBI:4705", "http://www.biopax.org/release/biopax-level3.owl#DnaRegion" ]
+  }, {
+    "@id" : "pr:cd/pIKELeftCassette/BBa_C0012",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "pr:cd/BBa_C0012",
+    "sbol:displayId" : "BBa_C0012",
+    "persistentIdentity" : "pr:cd/pIKELeftCassette/BBa_C0012"
+  }, {
+    "@id" : "pr:cd/pIKELeftCassette/BBa_R0040",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "pr:cd/BBa_R0040",
+    "sbol:displayId" : "BBa_R0040",
+    "persistentIdentity" : "pr:cd/pIKELeftCassette/BBa_R0040"
+  }, {
+    "@id" : "pr:cd/pIKELeftCassette/pIKELeftCassette_sc",
+    "@type" : "sbol:SequenceConstraint",
+    "sbol:displayId" : "pIKELeftCassette_sc",
+    "object" : "pr:cd/pIKELeftCassette/BBa_C0012",
+    "persistentIdentity" : "pr:cd/pIKELeftCassette/pIKELeftCassette_sc",
+    "restriction" : "sbol:precedes",
+    "subject" : "pr:cd/pIKELeftCassette/BBa_R0040"
+  }, {
+    "@id" : "pr:gen/datasheet/1.0",
+    "@type" : "datasheet",
+    "dcterms:title" : "Datasheet for Custom Parameters",
+    "sbol:displayId" : "datasheet",
+    "persistentIdentity" : "pr:gen/datasheet",
+    "sbol:version" : "1.0",
+    "characterizationData" : "myersLab:/measurement/Part:BBa_R0040",
+    "myersLab:transcriptionRate" : "0.75"
+  }, {
+    "@id" : "pr:seq/partseq_153",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "partseq_153",
+    "sbol:elements" : "atggtgaatgtgaaaccagtaacgttatacgatgtcgcagagtatgccggtgtctcttatcagaccgtttcccgcgtggtgaaccaggccagccacgtttctgcgaaaacgcgggaaaaagtggaagcggcgatggcggagctgaattacattcccaaccgcgtggcacaacaactggcgggcaaacagtcgttgctgattggcgttgccacctccagtctggccctgcacgcgccgtcgcaaattgtcgcggcgattaaatctcgcgccgatcaactgggtgccagcgtggtggtgtcgatggtagaacgaagcggcgtcgaagcctgtaaagcggcggtgcacaatcttctcgcgcaacgcgtcagtgggctgatcattaactatccgctggatgaccaggatgccattgctgtggaagctgcctgcactaatgttccggcgttatttcttgatgtctctgaccagacacccatcaacagtattattttctcccatgaagacggtacgcgactgggcgtggagcatctggtcgcattgggtcaccagcaaatcgcgctgttagcgggcccattaagttctgtctcggcgcgtctgcgtctggctggctggcataaatatctcactcgcaatcaaattcagccgatagcggaacgggaaggcgactggagtgccatgtccggttttcaacaaaccatgcaaatgctgaatgagggcatcgttcccactgcgatgctggttgccaacgatcagatggcgctgggcgcaatgcgcgccattaccgagtccgggctgcgcgttggtgcggatatctcggtagtgggatacgacgataccgaagacagctcatgttatatcccgccgttaaccaccatcaaacaggattttcgcctgctggggcaaaccagcgtggaccgcttgctgcaactctctcagggccaggcggtgaagggcaatcagctgttgcccgtctcactggtgaaaagaaaaaccaccctggcgcccaatacgcaaaccgcctctccccgcgcgttggccgattcattaatgcagctggcacgacaggtttcccgactggaaagcgggcaggctgcaaacgacgaaaactacgctttagtagcttaataa",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "pr:seq/partseq_153"
+  }, {
+    "@id" : "pr:seq/partseq_187",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "partseq_187",
+    "sbol:elements" : "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcac",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "pr:seq/partseq_187"
+  }, {
+    "@id" : "pr:seq/seq_K137046",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "seq_K137046",
+    "sbol:elements" : "gtgctcagtatctctatcactgatagggatgtcaatctctatcactgatagggactctagtatataaacgcagaaaggcccacccgaaggtgagccagtgtgactctagtagagagcgttcaccgacaaacaacagataaaacgaaaggc",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "pr:seq/seq_K137046"
+  } ],
+  "@context" : {
+    "encoding" : {
+      "@id" : "http://sbols.org/v2#encoding",
+      "@type" : "@id"
+    },
+    "elements" : {
+      "@id" : "http://sbols.org/v2#elements",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "displayId" : {
+      "@id" : "http://sbols.org/v2#displayId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "persistentIdentity" : {
+      "@id" : "http://sbols.org/v2#persistentIdentity",
+      "@type" : "@id"
+    },
+    "type" : {
+      "@id" : "http://sbols.org/v2#type",
+      "@type" : "@id"
+    },
+    "experience" : {
+      "@id" : "http://partsregistry.org/experience",
+      "@type" : "@id"
+    },
+    "datasheet" : {
+      "@id" : "http://www.async.ece.utah.edu/datasheet",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "role" : {
+      "@id" : "http://sbols.org/v2#role",
+      "@type" : "@id"
+    },
+    "sequence" : {
+      "@id" : "http://sbols.org/v2#sequence",
+      "@type" : "@id"
+    },
+    "sequenceConstraint" : {
+      "@id" : "http://sbols.org/v2#sequenceConstraint",
+      "@type" : "@id"
+    },
+    "component" : {
+      "@id" : "http://sbols.org/v2#component",
+      "@type" : "@id"
+    },
+    "transcriptionRate" : {
+      "@id" : "http://www.async.ece.utah.edu/transcriptionRate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "characterizationData" : {
+      "@id" : "http://www.async.ece.utah.edu/characterizationData",
+      "@type" : "@id"
+    },
+    "version" : {
+      "@id" : "http://sbols.org/v2#version",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "definition" : {
+      "@id" : "http://sbols.org/v2#definition",
+      "@type" : "@id"
+    },
+    "access" : {
+      "@id" : "http://sbols.org/v2#access",
+      "@type" : "@id"
+    },
+    "object" : {
+      "@id" : "http://sbols.org/v2#object",
+      "@type" : "@id"
+    },
+    "subject" : {
+      "@id" : "http://sbols.org/v2#subject",
+      "@type" : "@id"
+    },
+    "restriction" : {
+      "@id" : "http://sbols.org/v2#restriction",
+      "@type" : "@id"
+    },
+    "pr" : "http://partsregistry.org/",
+    "myersLab" : "http://www.async.ece.utah.edu/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sbol" : "http://sbols.org/v2#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "om" : "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+  }
+}

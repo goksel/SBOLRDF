@@ -1,0 +1,285 @@
+{
+  "@graph" : [ {
+    "@id" : "pr:cd/BBa_B0015",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "Double terminator",
+    "dcterms:title" : "BBa_B0015",
+    "sbol:displayId" : "BBa_B0015",
+    "persistentIdentity" : "pr:cd/BBa_B0015",
+    "role" : "http://identifiers.org/so/SO:0000141",
+    "sequence" : "pr:seq/BBa_B0015",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "pr:cd/BBa_B0034",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "RBS based on Elowitz repressilator",
+    "dcterms:title" : "BBa_B0034",
+    "sbol:displayId" : "BBa_B0034",
+    "persistentIdentity" : "pr:cd/BBa_B0034",
+    "role" : "http://identifiers.org/so/SO:0000139",
+    "sequence" : "pr:seq/BBa_B0034",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "pr:cd/BBa_C0062",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "luxR coding sequence",
+    "dcterms:title" : "luxR",
+    "sbol:displayId" : "BBa_C0062",
+    "persistentIdentity" : "pr:cd/BBa_C0062",
+    "role" : "http://identifiers.org/so/SO:0000316",
+    "sequence" : "pr:seq/BBa_C0062",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "pr:cd/BBa_F2620",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "3OC6HSL -> PoPS Receiver",
+    "dcterms:title" : "BBa_F2620",
+    "component" : [ "pr:cd/BBa_F2620/pTetR", "pr:cd/BBa_F2620/ter", "pr:cd/BBa_F2620/pLuxR", "pr:cd/BBa_F2620/luxR", "pr:cd/BBa_F2620/rbs" ],
+    "sbol:displayId" : "BBa_F2620",
+    "persistentIdentity" : "pr:cd/BBa_F2620",
+    "role" : "http://identifiers.org/so/SO:00001411",
+    "sequenceAnnotation" : [ "pr:cd/BBa_F2620/anno1", "pr:cd/BBa_F2620/anno2", "pr:cd/BBa_F2620/anno4", "pr:cd/BBa_F2620/anno3", "pr:cd/BBa_F2620/anno5" ],
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno1",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "pr:cd/BBa_F2620/pTetR",
+    "sbol:displayId" : "anno1",
+    "location" : "pr:cd/BBa_F2620/anno1/location1",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno1"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno1/location1",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location1",
+    "sbol:end" : "55",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno1/location1",
+    "sbol:start" : "1"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno2",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "pr:cd/BBa_F2620/rbs",
+    "sbol:displayId" : "anno2",
+    "location" : "pr:cd/BBa_F2620/anno2/location2",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno2"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno2/location2",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location2",
+    "sbol:end" : "68",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno2/location2",
+    "sbol:start" : "56"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno3",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "pr:cd/BBa_F2620/luxR",
+    "sbol:displayId" : "anno3",
+    "location" : "pr:cd/BBa_F2620/anno3/location3",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno3"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno3/location3",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location3",
+    "sbol:end" : "770",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno3/location3",
+    "sbol:start" : "69"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno4",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "pr:cd/BBa_F2620/ter",
+    "sbol:displayId" : "anno4",
+    "location" : "pr:cd/BBa_F2620/anno4/location4",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno4"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno4/location4",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location4",
+    "sbol:end" : "900",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno4/location4",
+    "sbol:start" : "771"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno5",
+    "@type" : "sbol:SequenceAnnotation",
+    "component" : "pr:cd/BBa_F2620/pLuxR",
+    "sbol:displayId" : "anno5",
+    "location" : "pr:cd/BBa_F2620/anno5/location5",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno5"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/anno5/location5",
+    "@type" : "sbol:Range",
+    "sbol:displayId" : "location5",
+    "sbol:end" : "956",
+    "orientation" : "sbol:inline",
+    "persistentIdentity" : "pr:cd/BBa_F2620/anno5/location5",
+    "sbol:start" : "901"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/luxR",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "pr:cd/BBa_C0062",
+    "sbol:displayId" : "luxR",
+    "persistentIdentity" : "pr:cd/BBa_F2620/luxR"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/pLuxR",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "pr:cd/BBa_R0062",
+    "sbol:displayId" : "pLuxR",
+    "persistentIdentity" : "pr:cd/BBa_F2620/pLuxR"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/pTetR",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "pr:cd/BBa_R0040",
+    "sbol:displayId" : "pTetR",
+    "persistentIdentity" : "pr:cd/BBa_F2620/pTetR"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/rbs",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "pr:cd/BBa_B0034",
+    "sbol:displayId" : "rbs",
+    "persistentIdentity" : "pr:cd/BBa_F2620/rbs"
+  }, {
+    "@id" : "pr:cd/BBa_F2620/ter",
+    "@type" : "sbol:Component",
+    "access" : "sbol:public",
+    "definition" : "pr:cd/BBa_B0015",
+    "sbol:displayId" : "ter",
+    "persistentIdentity" : "pr:cd/BBa_F2620/ter"
+  }, {
+    "@id" : "pr:cd/BBa_R0040",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "TetR repressible promoter",
+    "dcterms:title" : "pTetR",
+    "sbol:displayId" : "BBa_R0040",
+    "persistentIdentity" : "pr:cd/BBa_R0040",
+    "role" : "http://identifiers.org/so/SO:0000167",
+    "sequence" : "pr:seq/BBa_R0040",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "pr:cd/BBa_R0062",
+    "@type" : "sbol:ComponentDefinition",
+    "dcterms:description" : "LuxR inducible promoter",
+    "dcterms:title" : "pLuxR",
+    "sbol:displayId" : "BBa_R0062",
+    "persistentIdentity" : "pr:cd/BBa_R0062",
+    "role" : "http://identifiers.org/so/SO:0000167",
+    "sequence" : "pr:seq/BBa_R0062",
+    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+  }, {
+    "@id" : "pr:seq/BBa_B0015",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_B0015",
+    "sbol:elements" : "ccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "pr:seq/BBa_B0015"
+  }, {
+    "@id" : "pr:seq/BBa_B0034",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_B0034",
+    "sbol:elements" : "aaagaggagaaa",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "pr:seq/BBa_B0034"
+  }, {
+    "@id" : "pr:seq/BBa_C0062",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_C0062",
+    "sbol:elements" : "atgcttatctgatatgactaaaatggtacattgtgaatattatttactcgcgatcatttatcctcattctatggttaaatctgatatttcaatcctagataattaccctaaaaaatggaggcaatattatgatgacgctaatttaataaaatatgatcctatagtagattattctaactccaatcattcaccaattaattggaatatatttgaaaacaatgctgtaaataaaaaatctccaaatgtaattaaagaagcgaaaacatcaggtcttatcactgggtttagtttccctattcatacggctaacaatggcttcggaatgcttagttttgcacattcagaaaaagacaactatatagatagtttatttttacatgcgtgtatgaacataccattaattgttccttctctagttgataattatcgaaaaataaatatagcaaataataaatcaaacaacgatttaaccaaaagagaaaaagaatgtttagcgtgggcatgcgaaggaaaaagctcttgggatatttcaaaaatattaggttgcagtgagcgtactgtcactttccatttaaccaatgcgcaaatgaaactcaatacaacaaaccgctgccaaagtatttctaaagcaattttaacaggagcaattgattgcccatactttaaaaattaataacactgatagtgctagtgtagatcac",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "pr:seq/BBa_C0062"
+  }, {
+    "@id" : "pr:seq/BBa_R0040",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_R0040",
+    "sbol:elements" : "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcac",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "pr:seq/BBa_R0040"
+  }, {
+    "@id" : "pr:seq/BBa_R0062",
+    "@type" : "sbol:Sequence",
+    "sbol:displayId" : "BBa_R0062",
+    "sbol:elements" : "acctgtaggatcgtacaggtttacgcaagaaaatggtttgttatagtcgaataaa",
+    "encoding" : "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+    "persistentIdentity" : "pr:seq/BBa_R0062"
+  } ],
+  "@context" : {
+    "encoding" : {
+      "@id" : "http://sbols.org/v2#encoding",
+      "@type" : "@id"
+    },
+    "elements" : {
+      "@id" : "http://sbols.org/v2#elements",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "displayId" : {
+      "@id" : "http://sbols.org/v2#displayId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "persistentIdentity" : {
+      "@id" : "http://sbols.org/v2#persistentIdentity",
+      "@type" : "@id"
+    },
+    "orientation" : {
+      "@id" : "http://sbols.org/v2#orientation",
+      "@type" : "@id"
+    },
+    "end" : {
+      "@id" : "http://sbols.org/v2#end",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "start" : {
+      "@id" : "http://sbols.org/v2#start",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "definition" : {
+      "@id" : "http://sbols.org/v2#definition",
+      "@type" : "@id"
+    },
+    "access" : {
+      "@id" : "http://sbols.org/v2#access",
+      "@type" : "@id"
+    },
+    "component" : {
+      "@id" : "http://sbols.org/v2#component",
+      "@type" : "@id"
+    },
+    "location" : {
+      "@id" : "http://sbols.org/v2#location",
+      "@type" : "@id"
+    },
+    "sequence" : {
+      "@id" : "http://sbols.org/v2#sequence",
+      "@type" : "@id"
+    },
+    "role" : {
+      "@id" : "http://sbols.org/v2#role",
+      "@type" : "@id"
+    },
+    "type" : {
+      "@id" : "http://sbols.org/v2#type",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sequenceAnnotation" : {
+      "@id" : "http://sbols.org/v2#sequenceAnnotation",
+      "@type" : "@id"
+    },
+    "pr" : "http://partsregistry.org/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sbol" : "http://sbols.org/v2#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "om" : "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+  }
+}

@@ -1,0 +1,189 @@
+{ 
+  "http://myapp.com/codon_optimized" : { 
+    "http://sbols.org/v2#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+    }
+     ] ,
+    "http://www.w3.org/ns/prov#wasGeneratedBy" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codon_optimization_activity"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#ComponentDefinition"
+    }
+     ] ,
+    "http://sbols.org/v2#role" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/so/SO:0000316"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "codon_optimized"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codon_optimized"
+    }
+     ] ,
+    "http://purl.org/dc/terms/title" : [ { 
+      "type" : "literal" ,
+      "value" : "Codon optimised CDS"
+    }
+     ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/non_codon_optimized"
+    }
+     ]
+  }
+   ,
+  "http://myapp.com/non_codon_optimized" : { 
+    "http://sbols.org/v2#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#ComponentDefinition"
+    }
+     ] ,
+    "http://sbols.org/v2#role" : [ { 
+      "type" : "uri" ,
+      "value" : "http://identifiers.org/so/SO:0000316"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "non_codon_optimized"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/non_codon_optimized"
+    }
+     ] ,
+    "http://purl.org/dc/terms/title" : [ { 
+      "type" : "literal" ,
+      "value" : "Non Codon optimised CDS"
+    }
+     ]
+  }
+   ,
+  "http://myapp.com/codon_optimization_activity/usage" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/ns/prov#Usage"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "usage"
+    }
+     ] ,
+    "http://www.w3.org/ns/prov#entity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/non_codon_optimized"
+    }
+     ] ,
+    "http://www.w3.org/ns/prov#hadRole" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sbols.org/v2#source"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codon_optimization_activity/usage"
+    }
+     ]
+  }
+   ,
+  "http://myapp.com/codon_optimization_software" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/ns/prov#Agent"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "codon_optimization_software"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codon_optimization_software"
+    }
+     ] ,
+    "http://purl.org/dc/terms/title" : [ { 
+      "type" : "literal" ,
+      "value" : "Codon Optimization Software"
+    }
+     ]
+  }
+   ,
+  "http://myapp.com/codon_optimization_activity" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/ns/prov#Activity"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "codon_optimization_activity"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codon_optimization_activity"
+    }
+     ] ,
+    "http://www.w3.org/ns/prov#qualifiedUsage" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codon_optimization_activity/usage"
+    }
+     ] ,
+    "http://www.w3.org/ns/prov#qualifiedAssociation" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codon_optimization_activity/association"
+    }
+     ] ,
+    "http://purl.org/dc/terms/title" : [ { 
+      "type" : "literal" ,
+      "value" : "Codon Optimization Activity"
+    }
+     ]
+  }
+   ,
+  "http://myapp.com/codon_optimization_activity/association" : { 
+    "http://www.w3.org/ns/prov#agent" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codon_optimization_software"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/ns/prov#Association"
+    }
+     ] ,
+    "http://sbols.org/v2#displayId" : [ { 
+      "type" : "literal" ,
+      "value" : "association"
+    }
+     ] ,
+    "http://www.w3.org/ns/prov#hadRole" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codonoptimiser"
+    }
+     ] ,
+    "http://sbols.org/v2#persistentIdentity" : [ { 
+      "type" : "uri" ,
+      "value" : "http://myapp.com/codon_optimization_activity/association"
+    }
+     ]
+  }
+}

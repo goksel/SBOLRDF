@@ -1,0 +1,53 @@
+@base          <http://testbase.org> .
+@prefix :      <http://testbase.org> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sbol:  <http://sbols.org/v2#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix om:    <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+
+<http://partsregistry.org/cd/BBa_J23119>
+        a                        sbol:ComponentDefinition ;
+        dcterms:description      "Constitutive promoter" ;
+        dcterms:title            "J23119 promoter" ;
+        sbol:displayId           "BBa_J23119" ;
+        sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_J23119> ;
+        sbol:role                <http://identifiers.org/so/SO:0000613> , <http://identifiers.org/so/SO:0000167> ;
+        sbol:sequence            <http://partsregistry.org/seq/BBa_J23119> ;
+        sbol:sequenceAnnotation  <http://partsregistry.org/cd/BBa_J23119/cutat12> , <http://partsregistry.org/cd/BBa_J23119/cutat10> ;
+        sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> ;
+        prov:wasDerivedFrom      <http://partsregistry.org/Part:BBa_J23119> .
+
+<http://partsregistry.org/cd/BBa_J23119/cutat12>
+        a                        sbol:SequenceAnnotation ;
+        sbol:displayId           "cutat12" ;
+        sbol:location            <http://partsregistry.org/cd/BBa_J23119/cutat12/cut2> ;
+        sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_J23119/cutat12> .
+
+<http://partsregistry.org/cd/BBa_J23119/cutat10/cut1>
+        a                        sbol:Cut ;
+        sbol:at                  "10" ;
+        sbol:displayId           "cut1" ;
+        sbol:orientation         sbol:inline ;
+        sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_J23119/cutat10/cut1> .
+
+<http://partsregistry.org/seq/BBa_J23119>
+        a                        sbol:Sequence ;
+        sbol:displayId           "BBa_J23119" ;
+        sbol:elements            "ttgacagctagctcagtcctaggtataatgctagc" ;
+        sbol:encoding            <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html> ;
+        sbol:persistentIdentity  <http://partsregistry.org/seq/BBa_J23119> ;
+        prov:wasDerivedFrom      <http://parts.igem.org/Part:BBa_J23119:Design> .
+
+<http://partsregistry.org/cd/BBa_J23119/cutat12/cut2>
+        a                        sbol:Cut ;
+        sbol:at                  "12" ;
+        sbol:displayId           "cut2" ;
+        sbol:orientation         sbol:inline ;
+        sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_J23119/cutat12/cut2> .
+
+<http://partsregistry.org/cd/BBa_J23119/cutat10>
+        a                        sbol:SequenceAnnotation ;
+        sbol:displayId           "cutat10" ;
+        sbol:location            <http://partsregistry.org/cd/BBa_J23119/cutat10/cut1> ;
+        sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_J23119/cutat10> .

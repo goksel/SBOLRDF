@@ -1,0 +1,214 @@
+@prefix :      <http://testbase.org> .
+@prefix pr:    <http://partsregistry.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sbol:  <http://sbols.org/v2#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix om:    <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+
+{ <http://partsregistry.org/seq/BBa_R0040>
+          a                        sbol:Sequence ;
+          sbol:displayId           "BBa_R0040" ;
+          sbol:elements            "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcac" ;
+          sbol:encoding            <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html> ;
+          sbol:persistentIdentity  <http://partsregistry.org/seq/BBa_R0040> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno1/location1>
+          a                        sbol:Range ;
+          sbol:displayId           "location1" ;
+          sbol:end                 "55" ;
+          sbol:orientation         sbol:inline ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno1/location1> ;
+          sbol:start               "1" .
+  
+  <http://partsregistry.org/cd/BBa_F2620/ter>
+          a                        sbol:Component ;
+          sbol:access              sbol:public ;
+          sbol:definition          <http://partsregistry.org/cd/BBa_B0015> ;
+          sbol:displayId           "ter" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/ter> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno2/location2>
+          a                        sbol:Range ;
+          sbol:displayId           "location2" ;
+          sbol:end                 "68" ;
+          sbol:orientation         sbol:inline ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno2/location2> ;
+          sbol:start               "56" .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno5>
+          a                        sbol:SequenceAnnotation ;
+          sbol:component           <http://partsregistry.org/cd/BBa_F2620/pLuxR> ;
+          sbol:displayId           "anno5" ;
+          sbol:location            <http://partsregistry.org/cd/BBa_F2620/anno5/location5> ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno5> .
+  
+  <http://partsregistry.org/cd/BBa_R0062>
+          a                        sbol:ComponentDefinition ;
+          dcterms:description      "LuxR inducible promoter" ;
+          dcterms:title            "pLuxR" ;
+          sbol:displayId           "BBa_R0062" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_R0062> ;
+          sbol:role                <http://identifiers.org/so/SO:0000167> ;
+          sbol:sequence            <http://partsregistry.org/seq/BBa_R0062> ;
+          sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> .
+  
+  <http://partsregistry.org/cd/BBa_C0062>
+          a                        sbol:ComponentDefinition ;
+          dcterms:description      "luxR coding sequence" ;
+          dcterms:title            "luxR" ;
+          sbol:displayId           "BBa_C0062" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_C0062> ;
+          sbol:role                <http://identifiers.org/so/SO:0000316> ;
+          sbol:sequence            <http://partsregistry.org/seq/BBa_C0062> ;
+          sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno4>
+          a                        sbol:SequenceAnnotation ;
+          sbol:component           <http://partsregistry.org/cd/BBa_F2620/ter> ;
+          sbol:displayId           "anno4" ;
+          sbol:location            <http://partsregistry.org/cd/BBa_F2620/anno4/location4> ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno4> .
+  
+  <http://partsregistry.org/seq/BBa_R0062>
+          a                        sbol:Sequence ;
+          sbol:displayId           "BBa_R0062" ;
+          sbol:elements            "acctgtaggatcgtacaggtttacgcaagaaaatggtttgttatagtcgaataaa" ;
+          sbol:encoding            <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html> ;
+          sbol:persistentIdentity  <http://partsregistry.org/seq/BBa_R0062> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno3>
+          a                        sbol:SequenceAnnotation ;
+          sbol:component           <http://partsregistry.org/cd/BBa_F2620/luxR> ;
+          sbol:displayId           "anno3" ;
+          sbol:location            <http://partsregistry.org/cd/BBa_F2620/anno3/location3> ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno3> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/rbs>
+          a                        sbol:Component ;
+          sbol:access              sbol:public ;
+          sbol:definition          <http://partsregistry.org/cd/BBa_B0034> ;
+          sbol:displayId           "rbs" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/rbs> .
+  
+  <http://partsregistry.org/cd/BBa_F2620>
+          a                        sbol:ComponentDefinition ;
+          dcterms:description      "3OC6HSL -> PoPS Receiver" ;
+          dcterms:title            "BBa_F2620" ;
+          sbol:component           <http://partsregistry.org/cd/BBa_F2620/pTetR> , <http://partsregistry.org/cd/BBa_F2620/ter> , <http://partsregistry.org/cd/BBa_F2620/pLuxR> , <http://partsregistry.org/cd/BBa_F2620/luxR> , <http://partsregistry.org/cd/BBa_F2620/rbs> ;
+          sbol:displayId           "BBa_F2620" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620> ;
+          sbol:role                <http://identifiers.org/so/SO:00001411> ;
+          sbol:sequenceAnnotation  <http://partsregistry.org/cd/BBa_F2620/anno1> , <http://partsregistry.org/cd/BBa_F2620/anno2> , <http://partsregistry.org/cd/BBa_F2620/anno4> , <http://partsregistry.org/cd/BBa_F2620/anno3> , <http://partsregistry.org/cd/BBa_F2620/anno5> ;
+          sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/pTetR>
+          a                        sbol:Component ;
+          sbol:access              sbol:public ;
+          sbol:definition          <http://partsregistry.org/cd/BBa_R0040> ;
+          sbol:displayId           "pTetR" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/pTetR> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno2>
+          a                        sbol:SequenceAnnotation ;
+          sbol:component           <http://partsregistry.org/cd/BBa_F2620/rbs> ;
+          sbol:displayId           "anno2" ;
+          sbol:location            <http://partsregistry.org/cd/BBa_F2620/anno2/location2> ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno2> .
+  
+  <http://partsregistry.org/cd/BBa_B0034>
+          a                        sbol:ComponentDefinition ;
+          dcterms:description      "RBS based on Elowitz repressilator" ;
+          dcterms:title            "BBa_B0034" ;
+          sbol:displayId           "BBa_B0034" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_B0034> ;
+          sbol:role                <http://identifiers.org/so/SO:0000139> ;
+          sbol:sequence            <http://partsregistry.org/seq/BBa_B0034> ;
+          sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno4/location4>
+          a                        sbol:Range ;
+          sbol:displayId           "location4" ;
+          sbol:end                 "900" ;
+          sbol:orientation         sbol:inline ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno4/location4> ;
+          sbol:start               "771" .
+  
+  <http://partsregistry.org/cd/BBa_B0015>
+          a                        sbol:ComponentDefinition ;
+          dcterms:description      "Double terminator" ;
+          dcterms:title            "BBa_B0015" ;
+          sbol:displayId           "BBa_B0015" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_B0015> ;
+          sbol:role                <http://identifiers.org/so/SO:0000141> ;
+          sbol:sequence            <http://partsregistry.org/seq/BBa_B0015> ;
+          sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> .
+  
+  <http://partsregistry.org/cd/BBa_R0040>
+          a                        sbol:ComponentDefinition ;
+          dcterms:description      "TetR repressible promoter" ;
+          dcterms:title            "pTetR" ;
+          sbol:displayId           "BBa_R0040" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_R0040> ;
+          sbol:role                <http://identifiers.org/so/SO:0000167> ;
+          sbol:sequence            <http://partsregistry.org/seq/BBa_R0040> ;
+          sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno5/location5>
+          a                        sbol:Range ;
+          sbol:displayId           "location5" ;
+          sbol:end                 "956" ;
+          sbol:orientation         sbol:inline ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno5/location5> ;
+          sbol:start               "901" .
+  
+  <http://partsregistry.org/seq/BBa_C0062>
+          a                        sbol:Sequence ;
+          sbol:displayId           "BBa_C0062" ;
+          sbol:elements            "atgcttatctgatatgactaaaatggtacattgtgaatattatttactcgcgatcatttatcctcattctatggttaaatctgatatttcaatcctagataattaccctaaaaaatggaggcaatattatgatgacgctaatttaataaaatatgatcctatagtagattattctaactccaatcattcaccaattaattggaatatatttgaaaacaatgctgtaaataaaaaatctccaaatgtaattaaagaagcgaaaacatcaggtcttatcactgggtttagtttccctattcatacggctaacaatggcttcggaatgcttagttttgcacattcagaaaaagacaactatatagatagtttatttttacatgcgtgtatgaacataccattaattgttccttctctagttgataattatcgaaaaataaatatagcaaataataaatcaaacaacgatttaaccaaaagagaaaaagaatgtttagcgtgggcatgcgaaggaaaaagctcttgggatatttcaaaaatattaggttgcagtgagcgtactgtcactttccatttaaccaatgcgcaaatgaaactcaatacaacaaaccgctgccaaagtatttctaaagcaattttaacaggagcaattgattgcccatactttaaaaattaataacactgatagtgctagtgtagatcac" ;
+          sbol:encoding            <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html> ;
+          sbol:persistentIdentity  <http://partsregistry.org/seq/BBa_C0062> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno1>
+          a                        sbol:SequenceAnnotation ;
+          sbol:component           <http://partsregistry.org/cd/BBa_F2620/pTetR> ;
+          sbol:displayId           "anno1" ;
+          sbol:location            <http://partsregistry.org/cd/BBa_F2620/anno1/location1> ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno1> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/pLuxR>
+          a                        sbol:Component ;
+          sbol:access              sbol:public ;
+          sbol:definition          <http://partsregistry.org/cd/BBa_R0062> ;
+          sbol:displayId           "pLuxR" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/pLuxR> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/luxR>
+          a                        sbol:Component ;
+          sbol:access              sbol:public ;
+          sbol:definition          <http://partsregistry.org/cd/BBa_C0062> ;
+          sbol:displayId           "luxR" ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/luxR> .
+  
+  <http://partsregistry.org/seq/BBa_B0034>
+          a                        sbol:Sequence ;
+          sbol:displayId           "BBa_B0034" ;
+          sbol:elements            "aaagaggagaaa" ;
+          sbol:encoding            <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html> ;
+          sbol:persistentIdentity  <http://partsregistry.org/seq/BBa_B0034> .
+  
+  <http://partsregistry.org/cd/BBa_F2620/anno3/location3>
+          a                        sbol:Range ;
+          sbol:displayId           "location3" ;
+          sbol:end                 "770" ;
+          sbol:orientation         sbol:inline ;
+          sbol:persistentIdentity  <http://partsregistry.org/cd/BBa_F2620/anno3/location3> ;
+          sbol:start               "69" .
+  
+  <http://partsregistry.org/seq/BBa_B0015>
+          a                        sbol:Sequence ;
+          sbol:displayId           "BBa_B0015" ;
+          sbol:elements            "ccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata" ;
+          sbol:encoding            <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html> ;
+          sbol:persistentIdentity  <http://partsregistry.org/seq/BBa_B0015> .
+}
