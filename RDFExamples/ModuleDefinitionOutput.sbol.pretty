@@ -1,9 +1,9 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:pr="http://partsregistry.org/"
     xmlns:sbol="http://sbols.org/v2#"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns="http://testbase.org"
     xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/">
    <sbol:ComponentDefinition rdf:about="http://www.partsregistry.org/ECK120033736">
       <sbol:sequence>

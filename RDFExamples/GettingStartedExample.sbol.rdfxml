@@ -5,105 +5,104 @@
     xmlns:sbol="http://sbols.org/v2#"
     xmlns:prov="http://www.w3.org/ns/prov#"
     xmlns:myersLab="http://www.async.ece.utah.edu/"
-    xmlns="http://testbase.org"
     xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/" > 
-   <rdf:Description rdf:about="http://partsregistry.org/cd/BBa_K137046">
+   <rdf:Description rdf:about="cd/BBa_K137046">
       <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
       <rdf:type rdf:resource="http://sbols.org/v2#ComponentDefinition"/>
       <pr:experience rdf:resource="http://parts.igem.org/Part:BBa_R0040"/>
-      <myersLab:datasheet rdf:resource="http://partsregistry.org/gen/datasheet/1.0"/>
+      <myersLab:datasheet rdf:resource="gen/datasheet/1.0"/>
       <dcterms:description>TetR repressible promoter</dcterms:description>
       <dcterms:title>p(tetR)</dcterms:title>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/BBa_K137046"/>
+      <sbol:persistentIdentity rdf:resource="cd/BBa_K137046"/>
       <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
-      <sbol:sequence rdf:resource="http://partsregistry.org/seq/seq_K137046"/>
+      <sbol:sequence rdf:resource="seq/seq_K137046"/>
       <sbol:displayId>BBa_K137046</sbol:displayId>
-      <sbol:sequence rdf:resource="http://partsregistry.org/seq/partseq_187"/>
+      <sbol:sequence rdf:resource="seq/partseq_187"/>
       <sbol:type rdf:resource="http://identifiers.org/chebi/CHEBI:4705"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/cd/pIKELeftCassette">
-      <sbol:sequenceConstraint rdf:resource="http://partsregistry.org/cd/pIKELeftCassette/pIKELeftCassette_sc"/>
-      <sbol:component rdf:resource="http://partsregistry.org/cd/pIKELeftCassette/BBa_R0040"/>
-      <sbol:component rdf:resource="http://partsregistry.org/cd/pIKELeftCassette/BBa_C0012"/>
+   <rdf:Description rdf:about="cd/pIKELeftCassette">
+      <sbol:sequenceConstraint rdf:resource="cd/pIKELeftCassette/pIKELeftCassette_sc"/>
+      <sbol:component rdf:resource="cd/pIKELeftCassette/BBa_R0040"/>
+      <sbol:component rdf:resource="cd/pIKELeftCassette/BBa_C0012"/>
       <sbol:type rdf:resource="http://identifiers.org/chebi/CHEBI:4705"/>
       <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
       <sbol:displayId>pIKELeftCassette</sbol:displayId>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/pIKELeftCassette"/>
+      <sbol:persistentIdentity rdf:resource="cd/pIKELeftCassette"/>
       <rdf:type rdf:resource="http://sbols.org/v2#ComponentDefinition"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/cd/pIKELeftCassette/BBa_R0040">
-      <sbol:definition rdf:resource="http://partsregistry.org/cd/BBa_R0040"/>
+   <rdf:Description rdf:about="cd/pIKELeftCassette/BBa_R0040">
+      <sbol:definition rdf:resource="cd/BBa_R0040"/>
       <sbol:access rdf:resource="http://sbols.org/v2#public"/>
       <sbol:displayId>BBa_R0040</sbol:displayId>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/pIKELeftCassette/BBa_R0040"/>
+      <sbol:persistentIdentity rdf:resource="cd/pIKELeftCassette/BBa_R0040"/>
       <rdf:type rdf:resource="http://sbols.org/v2#Component"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/gen/datasheet/1.0">
+   <rdf:Description rdf:about="gen/datasheet/1.0">
       <myersLab:transcriptionRate>0.75</myersLab:transcriptionRate>
       <myersLab:characterizationData rdf:resource="http://www.async.ece.utah.edu//measurement/Part:BBa_R0040"/>
       <dcterms:title>Datasheet for Custom Parameters</dcterms:title>
       <sbol:version>1.0</sbol:version>
       <sbol:displayId>datasheet</sbol:displayId>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/gen/datasheet"/>
+      <sbol:persistentIdentity rdf:resource="gen/datasheet"/>
       <rdf:type rdf:resource="http://www.async.ece.utah.edu/datasheet"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/cd/pIKELeftCassette/pIKELeftCassette_sc">
-      <sbol:object rdf:resource="http://partsregistry.org/cd/pIKELeftCassette/BBa_C0012"/>
-      <sbol:subject rdf:resource="http://partsregistry.org/cd/pIKELeftCassette/BBa_R0040"/>
+   <rdf:Description rdf:about="cd/pIKELeftCassette/pIKELeftCassette_sc">
+      <sbol:object rdf:resource="cd/pIKELeftCassette/BBa_C0012"/>
+      <sbol:subject rdf:resource="cd/pIKELeftCassette/BBa_R0040"/>
       <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
       <sbol:displayId>pIKELeftCassette_sc</sbol:displayId>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/pIKELeftCassette/pIKELeftCassette_sc"/>
+      <sbol:persistentIdentity rdf:resource="cd/pIKELeftCassette/pIKELeftCassette_sc"/>
       <rdf:type rdf:resource="http://sbols.org/v2#SequenceConstraint"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/seq/partseq_187">
+   <rdf:Description rdf:about="seq/partseq_187">
       <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
       <sbol:elements>tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcac</sbol:elements>
       <sbol:displayId>partseq_187</sbol:displayId>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/seq/partseq_187"/>
+      <sbol:persistentIdentity rdf:resource="seq/partseq_187"/>
       <rdf:type rdf:resource="http://sbols.org/v2#Sequence"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/seq/seq_K137046">
+   <rdf:Description rdf:about="seq/seq_K137046">
       <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
       <sbol:elements>gtgctcagtatctctatcactgatagggatgtcaatctctatcactgatagggactctagtatataaacgcagaaaggcccacccgaaggtgagccagtgtgactctagtagagagcgttcaccgacaaacaacagataaaacgaaaggc</sbol:elements>
       <sbol:displayId>seq_K137046</sbol:displayId>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/seq/seq_K137046"/>
+      <sbol:persistentIdentity rdf:resource="seq/seq_K137046"/>
       <rdf:type rdf:resource="http://sbols.org/v2#Sequence"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/cd/pIKELeftCassette/BBa_C0012">
-      <sbol:definition rdf:resource="http://partsregistry.org/cd/BBa_C0012"/>
+   <rdf:Description rdf:about="cd/pIKELeftCassette/BBa_C0012">
+      <sbol:definition rdf:resource="cd/BBa_C0012"/>
       <sbol:access rdf:resource="http://sbols.org/v2#public"/>
       <sbol:displayId>BBa_C0012</sbol:displayId>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/pIKELeftCassette/BBa_C0012"/>
+      <sbol:persistentIdentity rdf:resource="cd/pIKELeftCassette/BBa_C0012"/>
       <rdf:type rdf:resource="http://sbols.org/v2#Component"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/cd/BBa_C0012">
-      <sbol:sequence rdf:resource="http://partsregistry.org/seq/partseq_153"/>
+   <rdf:Description rdf:about="cd/BBa_C0012">
+      <sbol:sequence rdf:resource="seq/partseq_153"/>
       <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
       <sbol:type rdf:resource="http://identifiers.org/chebi/CHEBI:4705"/>
       <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
       <dcterms:description>lacI repressor from E. coli (+LVA)</dcterms:description>
       <dcterms:title>lacI</dcterms:title>
       <sbol:displayId>BBa_C0012</sbol:displayId>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/BBa_C0012"/>
+      <sbol:persistentIdentity rdf:resource="cd/BBa_C0012"/>
       <rdf:type rdf:resource="http://sbols.org/v2#ComponentDefinition"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/seq/partseq_153">
+   <rdf:Description rdf:about="seq/partseq_153">
       <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
       <sbol:elements>atggtgaatgtgaaaccagtaacgttatacgatgtcgcagagtatgccggtgtctcttatcagaccgtttcccgcgtggtgaaccaggccagccacgtttctgcgaaaacgcgggaaaaagtggaagcggcgatggcggagctgaattacattcccaaccgcgtggcacaacaactggcgggcaaacagtcgttgctgattggcgttgccacctccagtctggccctgcacgcgccgtcgcaaattgtcgcggcgattaaatctcgcgccgatcaactgggtgccagcgtggtggtgtcgatggtagaacgaagcggcgtcgaagcctgtaaagcggcggtgcacaatcttctcgcgcaacgcgtcagtgggctgatcattaactatccgctggatgaccaggatgccattgctgtggaagctgcctgcactaatgttccggcgttatttcttgatgtctctgaccagacacccatcaacagtattattttctcccatgaagacggtacgcgactgggcgtggagcatctggtcgcattgggtcaccagcaaatcgcgctgttagcgggcccattaagttctgtctcggcgcgtctgcgtctggctggctggcataaatatctcactcgcaatcaaattcagccgatagcggaacgggaaggcgactggagtgccatgtccggttttcaacaaaccatgcaaatgctgaatgagggcatcgttcccactgcgatgctggttgccaacgatcagatggcgctgggcgcaatgcgcgccattaccgagtccgggctgcgcgttggtgcggatatctcggtagtgggatacgacgataccgaagacagctcatgttatatcccgccgttaaccaccatcaaacaggattttcgcctgctggggcaaaccagcgtggaccgcttgctgcaactctctcagggccaggcggtgaagggcaatcagctgttgcccgtctcactggtgaaaagaaaaaccaccctggcgcccaatacgcaaaccgcctctccccgcgcgttggccgattcattaatgcagctggcacgacaggtttcccgactggaaagcgggcaggctgcaaacgacgaaaactacgctttagtagcttaataa</sbol:elements>
       <sbol:displayId>partseq_153</sbol:displayId>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/seq/partseq_153"/>
+      <sbol:persistentIdentity rdf:resource="seq/partseq_153"/>
       <rdf:type rdf:resource="http://sbols.org/v2#Sequence"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://partsregistry.org/cd/BBa_R0040">
+   <rdf:Description rdf:about="cd/BBa_R0040">
       <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
-      <sbol:persistentIdentity rdf:resource="http://partsregistry.org/cd/BBa_R0040"/>
-      <sbol:sequence rdf:resource="http://partsregistry.org/seq/partseq_187"/>
+      <sbol:persistentIdentity rdf:resource="cd/BBa_R0040"/>
+      <sbol:sequence rdf:resource="seq/partseq_187"/>
       <dcterms:title>p(tetR)</dcterms:title>
       <dcterms:description>TetR repressible promoter</dcterms:description>
       <pr:experience rdf:resource="http://parts.igem.org/Part:BBa_R0040"/>
       <rdf:type rdf:resource="http://sbols.org/v2#ComponentDefinition"/>
       <sbol:type rdf:resource="http://identifiers.org/chebi/CHEBI:4705"/>
-      <myersLab:datasheet rdf:resource="http://partsregistry.org/gen/datasheet/1.0"/>
+      <myersLab:datasheet rdf:resource="gen/datasheet/1.0"/>
       <sbol:displayId>BBa_R0040</sbol:displayId>
       <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
    </rdf:Description>

@@ -14,22 +14,8 @@
         sbol:persistentIdentity  <cd/BBa_J23119> ;
         sbol:role                <http://identifiers.org/so/SO:0000613> , <http://identifiers.org/so/SO:0000167> ;
         sbol:sequence            <seq/BBa_J23119> ;
-        sbol:sequenceAnnotation  <cd/BBa_J23119/cutat12> , <cd/BBa_J23119/cutat10> ;
-        sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> ;
+        sbol:type                <http://www.biopax.org/release/biopax-level3.owl#DnaRegion> , <http://identifiers.org/chebi/CHEBI:4705> ;
         prov:wasDerivedFrom      <./Part:BBa_J23119> .
-
-<cd/BBa_J23119/cutat12>
-        a                        sbol:SequenceAnnotation ;
-        sbol:displayId           "cutat12" ;
-        sbol:location            <cd/BBa_J23119/cutat12/cut2> ;
-        sbol:persistentIdentity  <cd/BBa_J23119/cutat12> .
-
-<cd/BBa_J23119/cutat10/cut1>
-        a                        sbol:Cut ;
-        sbol:at                  "10" ;
-        sbol:displayId           "cut1" ;
-        sbol:orientation         sbol:inline ;
-        sbol:persistentIdentity  <cd/BBa_J23119/cutat10/cut1> .
 
 <seq/BBa_J23119>  a              sbol:Sequence ;
         sbol:displayId           "BBa_J23119" ;
@@ -37,16 +23,3 @@
         sbol:encoding            <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html> ;
         sbol:persistentIdentity  <seq/BBa_J23119> ;
         prov:wasDerivedFrom      <http://parts.igem.org/Part:BBa_J23119:Design> .
-
-<cd/BBa_J23119/cutat12/cut2>
-        a                        sbol:Cut ;
-        sbol:at                  "12" ;
-        sbol:displayId           "cut2" ;
-        sbol:orientation         sbol:inline ;
-        sbol:persistentIdentity  <cd/BBa_J23119/cutat12/cut2> .
-
-<cd/BBa_J23119/cutat10>
-        a                        sbol:SequenceAnnotation ;
-        sbol:displayId           "cutat10" ;
-        sbol:location            <cd/BBa_J23119/cutat10/cut1> ;
-        sbol:persistentIdentity  <cd/BBa_J23119/cutat10> .

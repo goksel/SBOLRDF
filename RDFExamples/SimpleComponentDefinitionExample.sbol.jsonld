@@ -8,35 +8,8 @@
     "persistentIdentity" : "pr:cd/BBa_J23119",
     "role" : [ "http://identifiers.org/so/SO:0000613", "http://identifiers.org/so/SO:0000167" ],
     "sequence" : "pr:seq/BBa_J23119",
-    "sequenceAnnotation" : [ "pr:cd/BBa_J23119/cutat12", "pr:cd/BBa_J23119/cutat10" ],
-    "type" : "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+    "type" : [ "http://www.biopax.org/release/biopax-level3.owl#DnaRegion", "http://identifiers.org/chebi/CHEBI:4705" ],
     "wasDerivedFrom" : "pr:Part:BBa_J23119"
-  }, {
-    "@id" : "pr:cd/BBa_J23119/cutat10",
-    "@type" : "sbol:SequenceAnnotation",
-    "sbol:displayId" : "cutat10",
-    "location" : "pr:cd/BBa_J23119/cutat10/cut1",
-    "persistentIdentity" : "pr:cd/BBa_J23119/cutat10"
-  }, {
-    "@id" : "pr:cd/BBa_J23119/cutat10/cut1",
-    "@type" : "sbol:Cut",
-    "sbol:at" : "10",
-    "sbol:displayId" : "cut1",
-    "orientation" : "sbol:inline",
-    "persistentIdentity" : "pr:cd/BBa_J23119/cutat10/cut1"
-  }, {
-    "@id" : "pr:cd/BBa_J23119/cutat12",
-    "@type" : "sbol:SequenceAnnotation",
-    "sbol:displayId" : "cutat12",
-    "location" : "pr:cd/BBa_J23119/cutat12/cut2",
-    "persistentIdentity" : "pr:cd/BBa_J23119/cutat12"
-  }, {
-    "@id" : "pr:cd/BBa_J23119/cutat12/cut2",
-    "@type" : "sbol:Cut",
-    "sbol:at" : "12",
-    "sbol:displayId" : "cut2",
-    "orientation" : "sbol:inline",
-    "persistentIdentity" : "pr:cd/BBa_J23119/cutat12/cut2"
   }, {
     "@id" : "pr:seq/BBa_J23119",
     "@type" : "sbol:Sequence",
@@ -71,28 +44,12 @@
       "@id" : "http://purl.org/dc/terms/title",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "sequenceAnnotation" : {
-      "@id" : "http://sbols.org/v2#sequenceAnnotation",
-      "@type" : "@id"
-    },
     "persistentIdentity" : {
       "@id" : "http://sbols.org/v2#persistentIdentity",
       "@type" : "@id"
     },
     "displayId" : {
       "@id" : "http://sbols.org/v2#displayId",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "location" : {
-      "@id" : "http://sbols.org/v2#location",
-      "@type" : "@id"
-    },
-    "orientation" : {
-      "@id" : "http://sbols.org/v2#orientation",
-      "@type" : "@id"
-    },
-    "at" : {
-      "@id" : "http://sbols.org/v2#at",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "encoding" : {

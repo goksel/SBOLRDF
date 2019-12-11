@@ -15,36 +15,9 @@
       <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
       <prov:wasDerivedFrom rdf:resource="./Part:BBa_J23119"/>
       <dcterms:title>J23119 promoter</dcterms:title>
-      <sbol:sequenceAnnotation>
-         <sbol:SequenceAnnotation rdf:about="cd/BBa_J23119/cutat12">
-            <sbol:location>
-               <sbol:Cut rdf:about="cd/BBa_J23119/cutat12/cut2">
-                  <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
-                  <sbol:at>12</sbol:at>
-                  <sbol:displayId>cut2</sbol:displayId>
-                  <sbol:persistentIdentity rdf:resource="cd/BBa_J23119/cutat12/cut2"/>
-               </sbol:Cut>
-            </sbol:location>
-            <sbol:displayId>cutat12</sbol:displayId>
-            <sbol:persistentIdentity rdf:resource="cd/BBa_J23119/cutat12"/>
-         </sbol:SequenceAnnotation>
-      </sbol:sequenceAnnotation>
       <sbol:persistentIdentity rdf:resource="cd/BBa_J23119"/>
       <sbol:displayId>BBa_J23119</sbol:displayId>
-      <sbol:sequenceAnnotation>
-         <sbol:SequenceAnnotation rdf:about="cd/BBa_J23119/cutat10">
-            <sbol:location>
-               <sbol:Cut rdf:about="cd/BBa_J23119/cutat10/cut1">
-                  <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
-                  <sbol:at>10</sbol:at>
-                  <sbol:displayId>cut1</sbol:displayId>
-                  <sbol:persistentIdentity rdf:resource="cd/BBa_J23119/cutat10/cut1"/>
-               </sbol:Cut>
-            </sbol:location>
-            <sbol:displayId>cutat10</sbol:displayId>
-            <sbol:persistentIdentity rdf:resource="cd/BBa_J23119/cutat10"/>
-         </sbol:SequenceAnnotation>
-      </sbol:sequenceAnnotation>
+      <sbol:type rdf:resource="http://identifiers.org/chebi/CHEBI:4705"/>
    </sbol:ComponentDefinition>
    <sbol:Sequence rdf:about="seq/BBa_J23119">
       <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>

@@ -1,4 +1,5 @@
-@prefix :      <http://testbase.org> .
+@prefix :      <http://partsregistry.org/> .
+@prefix pr:    <http://partsregistry.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix sbol:  <http://sbols.org/v2#> .

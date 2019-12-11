@@ -16,6 +16,7 @@ import org.sbolstandard.core2.examples.CutExample;
 import org.sbolstandard.core2.examples.GettingStartedExample;
 import org.sbolstandard.core2.examples.ModuleDefinitionOutput;
 import org.sbolstandard.core2.examples.Provenance_CodonOptimization;
+import org.sbolstandard.core2.examples.SimpleComponentDefinitionExample;
 
 import com.google.common.io.Resources;
 
@@ -37,6 +38,8 @@ public class App
     	new CutExample().main(null);
     	new ModuleDefinitionOutput().main(null);
     	new Provenance_CodonOptimization().main(args);
+    	new SimpleComponentDefinitionExample().main(args);
+    	
     	
     	File folder = new File("./RDFExamples");
     	File[] listOfFiles = folder.listFiles();
@@ -47,7 +50,8 @@ public class App
     		{
     	    	InputStream is=new FileInputStream(new File("./RDFExamples/" + name));
     	    	
-    	    	RDFHandler rdfHandler=new RDFHandler(is, URI.create("http://testbase.org"));
+    	    	RDFHandler rdfHandler=new RDFHandler(is, URI.create("http://partsregistry.org/"));
+    	    	rdfHandler.addNameSpace("pr", URI.create("http://partsregistry.org/"));
     	    	ArrayList<Resource> resources=new ArrayList<Resource>();
     	    	resources.add(rdfHandler.createResource(URI.create("http://sbols.org/v2#ComponentDefinition")));
     	    	resources.add(rdfHandler.createResource(URI.create("http://sbols.org/v2#Sequence")));
